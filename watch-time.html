@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Watch Time Calculator — Anime Atlas</title>
+    <link rel="stylesheet" href="styles.css?v=4" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <nav class="nav">
+        <a class="logo" href="index.html">⚡ Anime Atlas</a>
+        <div class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="browse-stories.html">Browse</a>
+          <a href="top-all-time.html">Top All Time</a>
+          <a href="recommendations.html">Recs</a>
+          <a href="episode-schedule.html">Schedule</a>
+        </div>
+        <button class="cta">Join the Club</button>
+      </nav>
+      <section class="hero">
+        <div class="hero-text">
+          <p class="badge">⏱ Calculator</p>
+          <h1>Watch Time Calculator</h1>
+          <p class="lead">
+            Add anime to your watchlist and find out exactly how many hours (and days) it'll take to finish them all.
+          </p>
+          <div class="rating-row">
+            <span class="rating-pill">56 anime</span>
+            <span class="rating-pill">Real episode counts</span>
+            <span class="rating-pill">Speed multipliers</span>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div class="glow-card">
+            <h3>⚡ Quick facts</h3>
+            <ul>
+              <li>📺 Average episode = <strong>24 min</strong></li>
+              <li>🐢 One Piece alone = <strong>~416 hours</strong></li>
+              <li>⚡ 1.5× speed cuts time by <strong>33%</strong></li>
+              <li>☕ That's a lot of cups of tea</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </header>
+
+    <main id="main">
+      <section class="section">
+        <div class="wt-wrap">
+
+          <!-- Left: selector -->
+          <div class="wt-selector">
+            <div class="wt-selector-head">
+              <h2>Pick your watchlist</h2>
+              <p>Click any anime to add it to your list.</p>
+            </div>
+
+            <!-- Search filter -->
+            <div class="wt-search-wrap">
+              <input
+                class="wt-search"
+                type="search"
+                id="wt-search"
+                placeholder="🔍 Filter anime..."
+                autocomplete="off"
+              />
+            </div>
+
+            <!-- Anime grid of selectable tiles -->
+            <div class="wt-anime-grid" id="wt-anime-grid"></div>
+          </div>
+
+          <!-- Right: results -->
+          <div class="wt-results">
+            <div class="wt-results-head">
+              <h2>Your watchlist</h2>
+              <div class="wt-speed-wrap">
+                <label for="wt-speed">Speed</label>
+                <select class="wt-speed" id="wt-speed">
+                  <option value="1">1× (normal)</option>
+                  <option value="1.25">1.25×</option>
+                  <option value="1.5" selected>1.5×</option>
+                  <option value="2">2×</option>
+                </select>
+              </div>
+            </div>
+
+            <!-- Selected anime list -->
+            <ul class="wt-list" id="wt-list">
+              <li class="wt-empty" id="wt-empty">No anime added yet — pick some from the left!</li>
+            </ul>
+
+            <!-- Totals -->
+            <div class="wt-totals" id="wt-totals">
+              <div class="wt-total-row">
+                <span class="wt-total-label">Total episodes</span>
+                <span class="wt-total-val" id="wt-total-eps">0</span>
+              </div>
+              <div class="wt-total-row">
+                <span class="wt-total-label">Raw time</span>
+                <span class="wt-total-val" id="wt-total-raw">0 min</span>
+              </div>
+              <div class="wt-total-row wt-total-highlight">
+                <span class="wt-total-label">At <span id="wt-speed-label">1.5×</span> speed</span>
+                <span class="wt-total-val" id="wt-total-speed">0 min</span>
+              </div>
+              <div class="wt-total-row">
+                <span class="wt-total-label">That's roughly</span>
+                <span class="wt-total-val wt-total-days" id="wt-total-days">—</span>
+              </div>
+            </div>
+
+            <button class="tl-btn tl-btn-accent wt-clear" id="wt-clear">🗑 Clear all</button>
+          </div>
+
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div>
+        <h3>Anime Atlas</h3>
+        <p>How many days of your life have you spent watching anime?</p>
+      </div>
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="browse-stories.html">Browse</a>
+        <a href="tier-list.html">Tier List</a>
+        <a href="top-all-time.html">Top All Time</a>
+      </div>
+    </footer>
+    <script src="script.js?v=4"></script>
+  </body>
+</html>

@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tier List Builder — Anime Atlas</title>
+    <link rel="stylesheet" href="styles.css?v=4" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <nav class="nav">
+        <a class="logo" href="index.html">⚡ Anime Atlas</a>
+        <div class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="browse-stories.html">Browse</a>
+          <a href="top-all-time.html">Top All Time</a>
+          <a href="recommendations.html">Recs</a>
+          <a href="episode-schedule.html">Schedule</a>
+        </div>
+        <button class="cta">Join the Club</button>
+      </nav>
+      <section class="hero">
+        <div class="hero-text">
+          <p class="badge">🏆 Interactive</p>
+          <h1>Tier List Builder</h1>
+          <p class="lead">
+            Drag and drop your favourite anime into S through F tiers. Share your taste — or defend it.
+          </p>
+          <div class="rating-row">
+            <span class="rating-pill">56 anime</span>
+            <span class="rating-pill">6 tiers</span>
+            <span class="rating-pill">Drag &amp; drop</span>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div class="glow-card">
+            <h3>💡 How it works</h3>
+            <ul>
+              <li>🖱 Drag tiles into any tier row</li>
+              <li>↩ Drag back to the pool to undo</li>
+              <li>🗑 Click <strong>Reset</strong> to start over</li>
+              <li>📋 Click <strong>Copy Results</strong> to share</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </header>
+
+    <main id="main">
+      <section class="section">
+        <div class="tl-wrap">
+
+          <!-- Tier rows -->
+          <div class="tl-board" id="tl-board">
+            <div class="tl-row">
+              <div class="tl-label tl-s">S</div>
+              <div class="tl-drop" data-tier="S" id="tier-S"></div>
+            </div>
+            <div class="tl-row">
+              <div class="tl-label tl-a">A</div>
+              <div class="tl-drop" data-tier="A" id="tier-A"></div>
+            </div>
+            <div class="tl-row">
+              <div class="tl-label tl-b">B</div>
+              <div class="tl-drop" data-tier="B" id="tier-B"></div>
+            </div>
+            <div class="tl-row">
+              <div class="tl-label tl-c">C</div>
+              <div class="tl-drop" data-tier="C" id="tier-C"></div>
+            </div>
+            <div class="tl-row">
+              <div class="tl-label tl-d">D</div>
+              <div class="tl-drop" data-tier="D" id="tier-D"></div>
+            </div>
+            <div class="tl-row">
+              <div class="tl-label tl-f">F</div>
+              <div class="tl-drop" data-tier="F" id="tier-F"></div>
+            </div>
+          </div>
+
+          <!-- Pool of anime tiles -->
+          <div class="tl-pool-wrap">
+            <div class="tl-pool-header">
+              <span>Unranked</span>
+              <div class="tl-actions">
+                <button class="tl-btn" id="tl-reset">🗑 Reset</button>
+                <button class="tl-btn tl-btn-accent" id="tl-copy">📋 Copy Results</button>
+              </div>
+            </div>
+            <div class="tl-pool tl-drop" data-tier="pool" id="tier-pool"></div>
+          </div>
+
+        </div>
+
+        <!-- Share output -->
+        <div class="tl-share-wrap" id="tl-share-wrap" style="display:none;">
+          <h3>Your tier list</h3>
+          <pre class="tl-share-text" id="tl-share-text"></pre>
+          <button class="tl-btn tl-btn-accent" id="tl-copy-confirm">Copy to clipboard ✓</button>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div>
+        <h3>Anime Atlas</h3>
+        <p>Rank them. Fight about it. Repeat.</p>
+      </div>
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="browse-stories.html">Browse</a>
+        <a href="watch-time.html">Watch Time</a>
+        <a href="top-all-time.html">Top All Time</a>
+      </div>
+    </footer>
+    <script src="script.js?v=4"></script>
+  </body>
+</html>

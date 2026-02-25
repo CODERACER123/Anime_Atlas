@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recommendations Quiz  Anime Atlas</title>
+    <link rel="stylesheet" href="styles.css?v=4" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <nav class="nav">
+        <a class="logo" href="index.html"> Anime Atlas</a>
+        <div class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="browse-stories.html">Browse</a>
+          <a href="top-all-time.html">Top All Time</a>
+          <a href="top-2026.html">Top 2026</a>
+          <a href="episode-schedule.html">Schedule</a>
+          <a href="tier-list.html">Tier List</a>
+          <a href="watch-time.html">Watch Time</a>
+        </div>
+        <button class="cta">Join the Club</button>
+      </nav>
+      <section class="hero">
+        <div class="hero-text">
+          <p class="badge"> Personalised picks</p>
+          <h1>Find your next anime</h1>
+          <p class="lead">
+            Pick a mood and we'll match you to the perfect series � with cover art, synopses, and direct links.
+          </p>
+          <div class="rating-row">
+            <span class="rating-pill">9 moods</span>
+            <span class="rating-pill">45 curated picks</span>
+            <span class="rating-pill">Live posters</span>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div class="glow-card">
+            <h3>How it works</h3>
+            <ul>
+              <li> Pick the mood that fits right now</li>
+              <li> Get 3 picks with cover art</li>
+              <li> Read the synopsis before clicking</li>
+              <li> Save any pick to your favourites</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </header>
+
+    <main id="main">
+
+      <!-- Mood selector -->
+      <section class="section">
+        <div class="section-head">
+          <h2>What's your mood?</h2>
+          <p>Tap a card  your recommendations appear instantly below.</p>
+        </div>
+        <div class="mood-grid" id="quiz-options">
+          <button class="quiz-card" data-mood="hype" data-emoji="">
+            <span class="quiz-emoji"></span>
+            <h3>Hype &amp; Action</h3>
+            <p>Big battles, power-ups, and epic moments.</p>
+          </button>
+          <button class="quiz-card" data-mood="heart" data-emoji="">
+            <span class="quiz-emoji"></span>
+            <h3>Heart &amp; Feels</h3>
+            <p>Emotional stories and deep character growth.</p>
+          </button>
+          <button class="quiz-card" data-mood="chill" data-emoji="">
+            <span class="quiz-emoji"></span>
+            <h3>Chill &amp; Cozy</h3>
+            <p>Relaxed vibes, wholesome fun.</p>
+          </button>
+          <button class="quiz-card" data-mood="mind" data-emoji="">
+            <span class="quiz-emoji"></span>
+            <h3>Mind Games</h3>
+            <p>Mystery, strategy, and clever twists.</p>
+          </button>
+          <button class="quiz-card" data-mood="dark" data-emoji="">
+            <span class="quiz-emoji"></span>
+            <h3>Dark &amp; Intense</h3>
+            <p>High stakes, suspense, and darker themes.</p>
+          </button>
+          <button class="quiz-card" data-mood="adventure" data-emoji="">
+            <span class="quiz-emoji"></span>
+            <h3>Adventure</h3>
+            <p>Journeys across massive, living worlds.</p>
+          </button>
+          <button class="quiz-card" data-mood="calm" data-emoji="">
+            <span class="quiz-emoji"></span>
+            <h3>Calm &amp; Reflective</h3>
+            <p>Slow-burn stories and emotional depth.</p>
+          </button>
+          <button class="quiz-card" data-mood="survival" data-emoji="">
+            <span class="quiz-emoji"></span>
+            <h3>Survival &amp; Horror</h3>
+            <p>Deadly stakes and intense survival trials.</p>
+          </button>
+          <button class="quiz-card" data-mood="blaze" data-emoji="">
+            <span class="quiz-emoji"></span>
+            <h3>Blazing Action</h3>
+            <p>High-energy battles and fire-powered spectacle.</p>
+          </button>
+        </div>
+      </section>
+
+      <!-- Results -->
+      <section class="section alt" id="quiz-results-section">
+        <div class="section-head">
+          <h2 id="quiz-results-heading">Your recommendations</h2>
+          <p id="quiz-results-note">Pick a mood above to see your matches.</p>
+        </div>
+        <div class="grid three" id="quiz-results"></div>
+      </section>
+
+      <!-- Quick genre shortcuts -->
+      <section class="section">
+        <div class="section-head">
+          <h2>Browse by genre</h2>
+          <p>Jump straight to the full library, filtered by what you love.</p>
+        </div>
+        <div class="genre-shortcut-row">
+          <a class="genre-shortcut" href="genre-adventure.html">⚔️ Adventure</a>
+          <a class="genre-shortcut" href="genre-fantasy.html">🌌 Fantasy</a>
+          <a class="genre-shortcut" href="genre-dark-fantasy.html">🌑 Dark Fantasy</a>
+          <a class="genre-shortcut" href="genre-shonen.html">🔥 Shōnen</a>
+          <a class="genre-shortcut" href="genre-comedy.html">😂 Comedy</a>
+          <a class="genre-shortcut" href="genre-supernatural.html">👻 Supernatural</a>
+          <a class="genre-shortcut" href="genre-psychological.html">🧠 Psychological</a>
+          <a class="genre-shortcut" href="genre-mystery.html">🕵️ Mystery</a>
+          <a class="genre-shortcut" href="genre-romance.html">💘 Romance</a>
+          <a class="genre-shortcut" href="genre-sports.html">🏐 Sports</a>
+          <a class="genre-shortcut" href="genre-horror.html">🕯️ Horror</a>
+          <a class="genre-shortcut" href="genre-historical.html">🏛️ Historical</a>
+          <a class="genre-shortcut" href="genre-slice-of-life.html">🌸 Slice of Life</a>
+          <a class="genre-shortcut" href="genre-cyberpunk.html">🤖 Cyberpunk</a>
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="footer">
+      <div>
+        <h3>Anime Atlas</h3>
+        <p>Find your next favourite in minutes.</p>
+      </div>
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="browse-stories.html">Browse</a>
+        <a href="top-2026.html">Top 2026</a>
+        <a href="top-all-time.html">Top All Time</a>
+      </div>
+    </footer>
+
+    <script src="script.js?v=4"></script>
+  </body>
+</html>
