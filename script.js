@@ -208,6 +208,38 @@ const initThemeToggle = () => {
 
 initThemeToggle();
 
+// Mobile hamburger menu
+(function () {
+  const nav = document.querySelector(".nav");
+  if (!nav) return;
+  const btn = document.createElement("button");
+  btn.className = "nav-hamburger";
+  btn.setAttribute("aria-label", "Toggle navigation");
+  btn.setAttribute("aria-expanded", "false");
+  btn.innerHTML = "&#9776;";
+  nav.appendChild(btn);
+  btn.addEventListener("click", () => {
+    const isOpen = nav.classList.toggle("nav-open");
+    btn.setAttribute("aria-expanded", String(isOpen));
+    btn.innerHTML = isOpen ? "&#10005;" : "&#9776;";
+  });
+  nav.querySelectorAll(".nav-links a").forEach((a) => {
+    a.addEventListener("click", () => {
+      nav.classList.remove("nav-open");
+      btn.setAttribute("aria-expanded", "false");
+      btn.innerHTML = "&#9776;";
+    });
+  });
+  // Close on outside click
+  document.addEventListener("click", (e) => {
+    if (!nav.contains(e.target)) {
+      nav.classList.remove("nav-open");
+      btn.setAttribute("aria-expanded", "false");
+      btn.innerHTML = "&#9776;";
+    }
+  });
+})();
+
 // Highlight the current page's nav link
 (function () {
   const path = window.location.pathname.split("/").pop() || "index.html";
@@ -3363,4 +3395,5 @@ document.querySelectorAll(".quiz-card").forEach((card) => {
     card.appendChild(preview);
   });
 })();
+
 
