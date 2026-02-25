@@ -1,39 +1,115 @@
-# Anime Atlas
+# Character Image Checklist
 
-A simple, single-page anime website that highlights fun facts, story beats, and iconic milestones.
+Place `.jpg` files in this folder using the exact filenames below.
 
-## Open locally
+## Naruto
+- [ ] naruto-uzumaki.jpg
+- [ ] sasuke-uchiha.jpg
+- [ ] sakura-haruno.jpg
+- [ ] kakashi-hatake.jpg
+- [ ] itachi-uchiha.jpg
 
-Open `index.html` in a browser.
+## One Piece
+- [ ] monkey-d-luffy.jpg
+- [ ] roronoa-zoro.jpg
+- [ ] nami.jpg
+- [ ] sanji.jpg
+- [ ] trafalgar-law.jpg
 
-## Customize
+## Attack on Titan
+- [ ] eren-yeager.jpg
+- [ ] mikasa-ackerman.jpg
+- [ ] armin-arlert.jpg
+- [ ] levi-ackerman.jpg
+- [ ] erwin-smith.jpg
 
-- Update content in `index.html`
-- Adjust colors and layout in `styles.css`
-- Add or edit random facts in `script.js`
+## My Hero Academia
+- [ ] izuku-midoriya.jpg
+- [ ] katsuki-bakugo.jpg
+- [ ] ochaco-uraraka.jpg
+- [ ] shoto-todoroki.jpg
+- [ ] all-might.jpg
 
-## Episode notifications (Brevo)
+## Dragon Ball Z
+- [ ] goku.jpg
+- [ ] vegeta.jpg
+- [ ] gohan.jpg
+- [ ] piccolo.jpg
+- [ ] frieza.jpg
 
-This project includes a scheduled notifier that emails subscribers when a new
-episode releases (based on AniList airing data).
+## Demon Slayer
+- [ ] tanjiro-kamado.jpg
+- [ ] nezuko-kamado.jpg
+- [ ] zenitsu-agatsuma.jpg
+- [ ] inosuke-hashibira.jpg
+- [ ] giyu-tomioka.jpg
 
-### Set subscribers
+## One Punch Man
+- [ ] saitama.jpg
+- [ ] genos.jpg
+- [ ] tatsumaki.jpg
+- [ ] mumen-rider.jpg
+- [ ] garou.jpg
 
-Edit `data/subscribers.json` and add the emails to notify.
+## Spy x Family
+- [ ] loid-forger.jpg
+- [ ] anya-forger.jpg
+- [ ] yor-forger.jpg
+- [ ] bond-forger.jpg
+- [ ] damian-desmond.jpg
 
-### Configure secrets
+## Chainsaw Man
+- [ ] denji.jpg
+- [ ] power.jpg
+- [ ] aki-hayakawa.jpg
+- [ ] makima.jpg
+- [ ] himeno.jpg
 
-Add these GitHub Actions secrets:
+## Jujutsu Kaisen
+- [ ] yuji-itadori.jpg
+- [ ] megumi-fushiguro.jpg
+- [ ] nobara-kugisaki.jpg
+- [ ] gojo-satoru.jpg
+- [ ] sukuna.jpg
 
-- `BREVO_API_KEY`
-- `BREVO_SENDER_EMAIL`
-- `BREVO_SENDER_NAME`
+## Black Clover
+- [ ] asta.jpg
+- [ ] yuno.jpg
+- [ ] noelle-silva.jpg
+- [ ] yami-sukehiro.jpg
+- [ ] julius-novachrono.jpg
 
-### Run locally
+## Haikyu!!
+- [ ] shoyo-hinata.jpg
+- [ ] tobio-kageyama.jpg
+- [ ] daichi-sawamura.jpg
+- [ ] kei-tsukishima.jpg
+- [ ] koshi-sugawara.jpg
 
-```powershell
-npm run notify
-```
+## Solo Leveling
+- [ ] sung-jinwoo.jpg
+- [ ] cha-hae-in.jpg
+- [ ] yoo-jinho.jpg
+- [ ] go-gunhee.jpg
+- [ ] beru.jpg
 
-Note: Formspree collects emails but does not automatically sync to Brevo. If you
-want automation, we can wire a backend to sync Formspree submissions.
+## Death Note
+- [ ] light-yagami.jpg
+- [ ] l.jpg
+- [ ] misa-amane.jpg
+- [ ] ryuk.jpg
+- [ ] near.jpg
+
+## Hunter x Hunter
+- [ ] gon-freecss.jpg
+- [ ] killua-zoldyck.jpg
+- [ ] kurapika.jpg
+- [ ] leorio-paradinight.jpg
+- [ ] hisoka.jpg
+
+## Bleach
+- [ ] ichigo-kurosaki.jpg
+- [ ] rukia-kuchiki.jpg
+- [ ] orihime-inoue.jpg
+- [ ] uryu-ishida.jpg
+- [ ] byakuya-kuchiki.jpg
