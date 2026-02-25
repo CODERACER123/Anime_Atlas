@@ -30,24 +30,21 @@
         </div>
         <button class="cta">Join the Club</button>
       </nav>
-      <section class="hero">
-        <div class="hero-text">
-          <p class="badge">✦ Browse all featured anime</p>
-          <h1>Stories Library</h1>
-          <p class="lead">
-            Pick a series to read its story overview, fun facts, and episode tracker.
-          </p>
-        </div>
-        <div class="hero-visual">
-          <div class="glow-card">
-            <h3>Quick tips</h3>
-            <ul>
-              <li>🎯 Click a title to open details</li>
-              <li>📖 Each page includes story + facts</li>
-              <li>🗂️ Track your watchlist below</li>
-              <li>🌙 Toggle dark/light with the button above</li>
-            </ul>
-          </div>
+      <section class="browse-hero">
+        <h1 class="browse-hero-title">Stories Library</h1>
+        <p class="browse-hero-sub">Search across every anime featured on Anime Atlas</p>
+        <div class="browse-hero-search-wrap">
+          <span class="browse-hero-icon">🔍</span>
+          <input
+            type="search"
+            id="anime-search"
+            class="browse-hero-input"
+            placeholder="Search by title, genre, or keyword…"
+            aria-label="Search anime"
+            autocomplete="off"
+            spellcheck="false"
+          />
+          <button class="browse-hero-clear" id="browse-hero-clear" type="button" aria-label="Clear">✕</button>
         </div>
       </section>
     </header>
@@ -59,14 +56,7 @@
           <p>All the series highlighted on the homepage.</p>
         </div>
         <div class="filter-row">
-          <div class="search-bar">
-            <input
-              type="search"
-              id="anime-search"
-              placeholder="Search anime by title..."
-              aria-label="Search anime"
-            />
-          </div>
+
           <div class="genre-filter-wrap">
             <select id="genre-filter" aria-label="Filter by genre">
               <option value="">All genres</option>
@@ -1677,4 +1667,5 @@
     <script src="script.js?v=4"></script>
   </body>
 </html>
+
 
