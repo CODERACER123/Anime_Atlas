@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Anime Atlas — Facts & Stories</title>
+		<link rel="stylesheet" href="styles.css?v=4" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
+	<body>
+		<a class="skip-link" href="#main">Skip to content</a>
+		<header class="site-header">
+			<nav class="nav">
+				<a class="logo" href="index.html">✦ Anime Atlas</a>
+				<div class="nav-links">
+					<a href="#featured">Featured</a>
+					<a href="manga.html">Manga</a>
+					<a href="top-all-time.html">Top All Time</a>
+					<a href="top-2026.html">Top 2026</a>
+					<a href="episode-schedule.html">Schedule</a>
+					<a href="recommendations.html">Recommendations</a>
+					<a href="tier-list.html">Tier List</a>
+					<a href="watch-time.html">Watch Time</a>
+				</div>
+				<button class="cta">Join the Club</button>
+			</nav>
+
+			<section class="hero">
+				<div class="hero-text">
+					<div class="hero-logo">
+						<span class="hero-logo-star">✦</span>
+						<span class="hero-logo-text">Anime Atlas</span>
+					</div>
+					<div class="fact-card" id="fact-card" style="margin-top: 36px;">
+						<h3>Fact of the moment</h3>
+						<p id="fact-text">Studio Ghibli famously hand-paints every frame detail for a warm, tactile look.</p>
+						<button class="ghost" id="random-fact" style="margin-top:10px;font-size:0.85rem;">✦ New fact</button>
+					</div>
+				</div>
+				<div class="hero-visual">
+					<div class="glow-card">
+						<h3>Top Genres</h3>
+						<ul class="genre-grid">
+							<li><a href="genre-adventure.html">⚔️ Adventure</a></li>
+							<li><a href="genre-slice-of-life.html">🌸 Slice of Life</a></li>
+							<li><a href="genre-shonen.html">🔥 Shōnen</a></li>
+							<li><a href="genre-fantasy.html">🌌 Fantasy</a></li>
+							<li><a href="genre-dark-fantasy.html">🌑 Dark Fantasy</a></li>
+							<li><a href="genre-cyberpunk.html">🤖 Cyberpunk</a></li>
+							<li><a href="genre-mystery.html">🕵️ Mystery</a></li>
+							<li><a href="genre-psychological.html">🧠 Psychological</a></li>
+							<li><a href="genre-romance.html">💘 Romance</a></li>
+							<li><a href="genre-sports.html">🏐 Sports</a></li>
+							<li><a href="genre-horror.html">🕯️ Horror</a></li>
+							<li><a href="genre-supernatural.html">👻 Supernatural</a></li>
+							<li><a href="genre-comedy.html">😂 Comedy</a></li>
+							<li><a href="genre-historical.html">🏛️ Historical</a></li>
+						</ul>
+					</div>
+					<div class="glow-card" id="weekly-spotlight">
+						<h3>✦ Weekly Spotlight</h3>
+						<p id="spotlight-title" style="font-size:1.1rem;font-weight:700;margin:8px 0 4px;color:var(--text)">Fullmetal Alchemist: Brotherhood</p>
+						<span class="tag" id="spotlight-tags">Alchemy • Brotherhood • Redemption</span>
+					</div>
+				</div>
+			</section>
+		</header>
+
+		<main id="main">
+			<section id="featured" class="section">
+				<div class="section-head">
+					<h2>Featured anime worlds</h2>
+					<p>Quick introductions paired with a signature story beat.</p>
+				</div>
+				<div class="grid three">
+					<article class="card" data-anilist-query="Naruto">
+						<img class="card-cover" src="https://placehold.co/600x800?text=Naruto" alt="Naruto cover" />
+						<h3><a href="naruto.html">Naruto</a></h3>
+						<p class="meta">Village Hidden in the Leaves</p>
+						<p>
+							Naruto’s journey from outcast to Hokage is driven by relentless
+							optimism and the power of bonds.
+						</p>
+						<span class="tag">Ninja • Friendship</span>
+					</article>
+					<article class="card" data-anilist-query="One Piece">
+						<img class="card-cover" src="https://placehold.co/600x800?text=One%20Piece" alt="One Piece cover" />
+						<h3><a href="one-piece.html">One Piece</a></h3>
+						<p class="meta">Grand Line Adventures</p>
+						<p>
+							Luffy’s crew expands island by island, with each arc revealing
+							hidden histories and new alliances.
+						</p>
+						<span class="tag">Pirates • Found Family</span>
+					</article>
+					<article class="card" data-anilist-query="Shingeki no Kyojin">
+						<img class="card-cover" src="https://placehold.co/600x800?text=Attack%20on%20Titan" alt="Attack on Titan cover" />
+						<h3><a href="attack-on-titan.html">Attack on Titan</a></h3>
+						<p class="meta">Walls, Titans, Truth</p>
+						<p>
+							What begins as survival turns into a geopolitical mystery about
+							memory and freedom.
+						</p>
+						<span class="tag">Dark Fantasy • Mystery</span>
+					</article>
+					<article class="card" data-anilist-query="Boku no Hero Academia">
+						<img class="card-cover" src="https://placehold.co/600x800?text=My%20Hero%20Academia" alt="My Hero Academia cover" />
+						<h3><a href="my-hero-academia.html">My Hero Academia</a></h3>
+						<p class="meta">Quirks, Heroes, Destiny</p>
+						<p>
+							A powerless teen inherits a legendary ability and trains to become
+							the greatest hero in a world built on quirks.
+						</p>
+						<span class="tag">Superheroes • Growth</span>
+					</article>
+					<article class="card" data-anilist-query="Dragon Ball Z">
+						<img class="card-cover" src="https://placehold.co/600x800?text=Dragon%20Ball%20Z" alt="Dragon Ball Z cover" />
+						<h3><a href="dragon-ball-z.html">Dragon Ball Z</a></h3>
+						<p class="meta">Saiyans, Battles, Power</p>
+						<p>
+							Goku and friends defend Earth from cosmic threats while pushing
+							their limits with epic transformations.
+						</p>
+						<span class="tag">Action • Legacy</span>
+					</article>
+					<article class="card" data-anilist-query="Kimetsu no Yaiba">
+						<img class="card-cover" src="https://placehold.co/600x800?text=Demon%20Slayer" alt="Demon Slayer cover" />
+						<h3><a href="demon-slayer.html">Demon Slayer</a></h3>
+						<p class="meta">Blades, Breath, Resolve</p>
+						<p>
+							Tanjiro joins the Demon Slayer Corps to save his sister and avenge
+							his family, facing haunting demons along the way.
+						</p>
+						<span class="tag">Dark Fantasy • Emotion</span>
+					</article>
+					<article class="card" data-anilist-query="One Punch Man">
+						<img class="card-cover" src="https://placehold.co/600x800?text=One%20Punch%20Man" alt="One Punch Man cover" />
+						<h3><a href="one-punch-man.html">One Punch Man</a></h3>
+						<p class="meta">Heroes, Comedy, Power</p>
+						<p>
+							Saitama can defeat any foe with a single punch, but he searches for
+							meaning and excitement in a world of heroes.
+						</p>
+						<span class="tag">Comedy • Action</span>
+					</article>
+					<article class="card" data-anilist-query="Spy x Family">
+						<img class="card-cover" src="https://placehold.co/600x800?text=Spy%20x%20Family" alt="Spy x Family cover" />
+						<h3><a href="spy-x-family.html">Spy x Family</a></h3>
+						<p class="meta">Espionage, Family, Secrets</p>
+						<p>
+							A spy, an assassin, and a telepath form a fake family to keep the
+							peace, hiding their true identities.
+						</p>
+						<span class="tag">Slice of Life • Espionage</span>
+					</article>
+					<article class="card" data-anilist-query="Chainsaw Man">
+						<img class="card-cover" src="https://placehold.co/600x800?text=Chainsaw%20Man" alt="Chainsaw Man cover" />
+						<h3><a href="chainsaw-man.html">Chainsaw Man</a></h3>
+						<p class="meta">Devils, Dreams, Chaos</p>
+						<p>
+							Denji merges with his devil dog Pochita to become Chainsaw Man,
+							chasing simple dreams in a brutal world.
+						</p>
+						<span class="tag">Dark Fantasy • Action</span>
+					</article>
+					<article class="card" data-anilist-query="Jujutsu Kaisen">
+						<img class="card-cover" src="https://placehold.co/600x800?text=Jujutsu%20Kaisen" alt="Jujutsu Kaisen cover" />
+						<h3><a href="jujutsu-kaisen.html">Jujutsu Kaisen</a></h3>
+						<p class="meta">Curses, Sorcery, Fate</p>
+						<p>
+							Yuji Itadori joins a secret school of sorcerers to fight curses
+							after becoming the host of Sukuna.
+						</p>
+						<span class="tag">Supernatural • Battles</span>
+					</article>
+				</div>
+				<div class="section-actions">
+					<a class="primary" href="browse-stories.html">More stories here</a>
+				</div>
+			</section>
+
+		</main>
+
+		<footer class="footer">
+			<div>
+				<h3>Anime Atlas</h3>
+				<p>Made for fans who love lore, facts, and storytelling.</p>
+			</div>
+			<div class="footer-links">
+				<a href="index.html#featured">Featured</a>
+				<a href="manga.html">Manga</a>
+				<a href="browse-stories.html">Browse</a>
+				<a href="episode-schedule.html">Schedule</a>
+				<a href="top-2026.html">Top 2026</a>
+			</div>
+		</footer>
+
+		<script src="script.js?v=4"></script>
+	</body>
+</html>

@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Hero Academia — Story & Fun Facts</title>
+    <link rel="stylesheet" href="styles.css?v=4" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=DM+Sans:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body data-anilist-query="Boku no Hero Academia">
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <nav class="nav">
+        <a class="logo" href="index.html">Anime Atlas</a>
+        <div class="nav-links">
+          <a href="index.html#featured">Back to Featured</a>
+        </div>
+        <button class="cta">Join the Club</button>
+      </nav>
+      <section class="hero">
+        <div class="hero-text">
+          <p class="badge">Superheroes • School • Growth</p>
+          <h1>My Hero Academia</h1>
+          <p class="lead">
+            In a world where most people have superpowers called quirks, Izuku
+            Midoriya inherits One For All and trains to become the greatest hero.
+          </p>
+          <div class="rating-row">
+            <span class="rating-pill">Suggested rating: TV-14</span>
+            <span class="rating-pill">Suggested age: 13+</span>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <img class="detail-cover" id="detail-cover" src="https://placehold.co/600x800?text=My%20Hero%20Academia" alt="My Hero Academia cover" />
+          <div class="episode-tracker tracker-card" data-anime="My Hero Academia">
+            <h3>Episode tracker</h3>
+            <p class="tracker-status" data-status>Episode 0</p>
+            <div class="progress">
+              <div class="progress-bar" data-bar style="width: 0%;"></div>
+            </div>
+            <div class="tracker-actions">
+              <button type="button" class="ghost" data-action="decrease">-1</button>
+              <button type="button" class="primary" data-action="increase">+1</button>
+              <button type="button" class="ghost" data-action="reset">Reset</button>
+            </div>
+          </div>
+          <div class="glow-card">
+            <h3>Core Themes</h3>
+            <ul>
+              <li>Heroism and responsibility</li>
+              <li>Mentorship and legacy</li>
+              <li>Perseverance under pressure</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </header>
+
+    <main id="main">
+      <section class="section">
+        <div class="section-head">
+          <h2>Story overview</h2>
+          <p>Training arcs, rivalries, and the meaning of heroism.</p>
+        </div>
+        <div class="grid two">
+          <article class="card">
+            <h3>Act 1: The quirkless dream</h3>
+            <p>
+              Izuku earns All Might’s trust and inherits his power, joining U.A.
+              High to prove that heart matters as much as strength.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Act 2: Trials of U.A.</h3>
+            <p>
+              Training exercises and villain attacks push Class 1-A to develop
+              teamwork and confidence in their abilities.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Act 3: The rise of villains</h3>
+            <p>
+              The League of Villains and the Paranormal Liberation Front raise
+              the stakes, challenging the hero society’s ideals.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Finale: What makes a hero</h3>
+            <p>
+              Izuku learns that heroism is defined by compassion, sacrifice, and
+              inspiring hope in others.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section alt">
+        <div class="section-head">
+          <h2>Fun facts</h2>
+          <p>Trivia and standout moments from U.A. High.</p>
+        </div>
+        <div class="grid two">
+          <div class="stack">
+            <div class="fact">
+              <h4>All Might’s smile hides a secret.</h4>
+              <p>
+                His true form motivates Izuku to protect people even when it’s
+                difficult.
+              </p>
+            </div>
+            <div class="fact">
+              <h4>Each hero name is intentional.</h4>
+              <p>
+                Hero aliases reflect personality and powers, like “Deku” evolving
+                into a symbol of determination.
+              </p>
+            </div>
+            <div class="fact">
+              <h4>U.A. students face real-world stakes.</h4>
+              <p>
+                The series blends school life with dangerous field missions.
+              </p>
+            </div>
+          </div>
+          <div class="callout">
+            <h3>Notable arcs</h3>
+            <ul>
+              <li>U.A. Entrance Exam</li>
+              <li>Sports Festival</li>
+              <li>Internship Arc</li>
+              <li>Paranormal Liberation War</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="section reviews-section" data-anime="My Hero Academia">
+        <div class="section-head">
+          <h2>Reviews & ratings</h2>
+          <p>Share your thoughts and rate this anime.</p>
+        </div>
+        <div class="reviews-summary" data-summary>Loading ratings...</div>
+        <form class="review-form" data-review-form>
+          <label class="review-field">
+            Your name
+            <input type="text" name="reviewer" placeholder="Your name" required />
+          </label>
+          <label class="review-field">
+            Your rating
+            <select name="rating" required>
+              <option value="">Select</option>
+              <option value="5">★★★★★ (5)</option>
+              <option value="4">★★★★☆ (4)</option>
+              <option value="3">★★★☆☆ (3)</option>
+              <option value="2">★★☆☆☆ (2)</option>
+              <option value="1">★☆☆☆☆ (1)</option>
+            </select>
+          </label>
+          <label class="review-field">
+            Your review
+            <textarea name="review" rows="4" placeholder="Write a short review" required></textarea>
+          </label>
+          <button type="submit" class="primary">Submit review</button>
+        </form>
+        <div class="reviews-list" data-reviews></div>
+      </section>
+      <section class="section character-spotlight" data-anime="My Hero Academia">
+        <div class="section-head">
+          <h2>Character spotlight</h2>
+          <p>Key characters from this series.</p>
+        </div>
+        <div class="character-grid" data-characters>
+          <p class="muted">Loading characters...</p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div>
+        <h3>Anime Atlas</h3>
+        <p>More worlds and lore waiting for you.</p>
+      </div>
+      <div class="footer-links">
+        <a href="index.html#featured">Featured</a>
+      </div>
+    </footer>
+    <script src="script.js?v=4"></script>
+  </body>
+</html>

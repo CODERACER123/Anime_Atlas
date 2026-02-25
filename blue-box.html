@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blue Box — Anime Atlas</title>
+    <link rel="stylesheet" href="styles.css?v=4" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body data-anilist-query="Ao no Hako">
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <nav class="nav">
+        <a class="logo" href="index.html">✦ Anime Atlas</a>
+        <div class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="browse-stories.html">Browse stories</a>
+          <a href="top-2026.html">Top 2026</a>
+        </div>
+        <button class="cta">Join the Club</button>
+      </nav>
+      <section class="hero">
+        <div class="hero-text">
+          <p class="badge">Sports • Romance • High School</p>
+          <h1>Blue Box</h1>
+          <p class="lead">
+            Taiki Inomata dreams of reaching the nationals in badminton—as his crush, basketball star Chinatsu Kano, moves into his family home for the duration.
+          </p>
+          <div class="rating-row">
+            <span class="rating-pill">Suggested rating: TV-PG</span>
+            <span class="rating-pill">Suggested age: 10+</span>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <img class="detail-cover" id="detail-cover" src="https://placehold.co/600x800?text=Blue%20Box" alt="Blue Box cover" />
+          <div class="episode-tracker tracker-card" data-anime="Blue Box">
+            <h3>Episode tracker</h3>
+            <p class="tracker-status" data-status>Episode 0</p>
+            <div class="progress">
+              <div class="progress-bar" data-bar style="width: 0%;"></div>
+            </div>
+            <div class="tracker-actions">
+              <button type="button" class="ghost" data-action="decrease">-1</button>
+              <button type="button" class="primary" data-action="increase">+1</button>
+              <button type="button" class="ghost" data-action="reset">Reset</button>
+            </div>
+          </div>
+          <div class="glow-card">
+            <h3>Key Elements</h3>
+            <ul>
+              <li>🏸 Competitive sports spirit</li>
+              <li>💖 Tender, slow-burn romance</li>
+              <li>🏠 Shared living dynamics</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </header>
+
+    <main id="main">
+      <section class="section">
+        <div class="section-head">
+          <h2>Ambitions & Hearts</h2>
+          <p>Balancing high-level athletics with the complexities of first love.</p>
+        </div>
+        <div class="grid two">
+          <article class="card">
+            <h3>Taiki Inomata</h3>
+            <p>
+              A hardworking badminton player who strives to prove his worth on the court and to the girl of his dreams.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Chinatsu Kano</h3>
+            <p>
+              The star basketball player who leads her team with dedication and a kind heart, unaware of the crush she's inspired.
+            </p>
+          </article>
+          <article class="card">
+            <h3>The Gymnasium</h3>
+            <p>
+              The early morning practices and shared gymnasium time are the backdrop for their relationship's quiet evolution.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Sports Rivalries</h3>
+            <p>
+              High stakes outside of romance—winning is just as important as the emotional bonds they build.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section alt">
+        <div class="section-head">
+          <h2>Fun facts</h2>
+          <p>Highlights from the world of Blue Box.</p>
+        </div>
+        <div class="grid two">
+          <div class="stack">
+            <div class="fact">
+              <h4>Originally a one-shot.</h4>
+              <p>
+                Kouji Miura first published Blue Box as a one-shot in 2020 before its serial run.
+              </p>
+            </div>
+            <div class="fact">
+              <h4>Realistic sports.</h4>
+              <p>
+                The badminton and basketball mechanics are praised for their accuracy.
+              </p>
+            </div>
+            <div class="fact">
+              <h4>Shared spaces.</h4>
+              <p>
+                The gymnasium is more than a court; it's the heart of their relationship.
+              </p>
+            </div>
+          </div>
+          <div class="callout">
+            <h3>Notable arcs</h3>
+            <ul>
+              <li>The Morning Practice</li>
+              <li>Prefectural Tournament</li>
+              <li>The Winter Training</li>
+              <li>Joint Summer Camp</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="section reviews-section" data-anime="Blue Box">
+        <div class="section-head">
+          <h2>Reviews & ratings</h2>
+          <p>Share your thoughts and rate this anime.</p>
+        </div>
+        <div class="reviews-summary" data-summary>Loading ratings...</div>
+        <form class="review-form" data-review-form>
+          <label class="review-field">
+            Your name
+            <input type="text" name="reviewer" placeholder="Your name" required />
+          </label>
+          <label class="review-field">
+            Your rating
+            <select name="rating" required>
+              <option value="">Select</option>
+              <option value="5">★★★★★ (5)</option>
+              <option value="4">★★★★☆ (4)</option>
+              <option value="3">★★★☆☆ (3)</option>
+              <option value="2">★★☆☆☆ (2)</option>
+              <option value="1">★☆☆☆☆ (1)</option>
+            </select>
+          </label>
+          <label class="review-field">
+            Your review
+            <textarea name="review" rows="4" placeholder="Write a short review" required></textarea>
+          </label>
+          <button type="submit" class="primary">Submit review</button>
+        </form>
+        <div class="reviews-list" data-reviews></div>
+      </section>
+
+      <section class="section character-spotlight" data-anime="Blue Box">
+        <div class="section-head">
+          <h2>Character spotlight</h2>
+          <p>Key characters from this series.</p>
+        </div>
+        <div class="character-grid" data-characters>
+          <p class="muted">Loading characters...</p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div>
+        <h3>Anime Atlas</h3>
+        <p>Explore more worlds, one story at a time.</p>
+      </div>
+      <div class="footer-links">
+        <a href="manga.html">Manga</a>
+        <a href="browse-stories.html">Browse</a>
+        <a href="index.html">Home</a>
+      </div>
+    </footer>
+    <script src="script.js?v=4"></script>
+  </body>
+</html>

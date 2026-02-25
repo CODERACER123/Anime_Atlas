@@ -1,0 +1,1678 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Browse Stories — Anime Atlas</title>
+    <link rel="stylesheet" href="styles.css?v=4" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <nav class="nav">
+        <a class="logo" href="index.html">✦ Anime Atlas</a>
+        <div class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="manga.html">Manga</a>
+          <a href="top-all-time.html">Top All Time</a>
+          <a href="top-2026.html">Top 2026</a>
+          <a href="episode-schedule.html">Schedule</a>
+          <a href="recommendations.html">Recs</a>
+          <a href="tier-list.html">Tier List</a>
+          <a href="watch-time.html">Watch Time</a>
+        </div>
+        <button class="cta">Join the Club</button>
+      </nav>
+      <section class="hero">
+        <div class="hero-text">
+          <p class="badge">✦ Browse all featured anime</p>
+          <h1>Stories Library</h1>
+          <p class="lead">
+            Pick a series to read its story overview, fun facts, and episode tracker.
+          </p>
+        </div>
+        <div class="hero-visual">
+          <div class="glow-card">
+            <h3>Quick tips</h3>
+            <ul>
+              <li>🎯 Click a title to open details</li>
+              <li>📖 Each page includes story + facts</li>
+              <li>🗂️ Track your watchlist below</li>
+              <li>🌙 Toggle dark/light with the button above</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </header>
+
+    <main id="main">
+      <section class="section">
+        <div class="section-head">
+          <h2>Featured anime worlds</h2>
+          <p>All the series highlighted on the homepage.</p>
+        </div>
+        <div class="filter-row">
+          <div class="search-bar">
+            <input
+              type="search"
+              id="anime-search"
+              placeholder="Search anime by title..."
+              aria-label="Search anime"
+            />
+          </div>
+          <div class="genre-filter-wrap">
+            <select id="genre-filter" aria-label="Filter by genre">
+              <option value="">All genres</option>
+            </select>
+          </div>
+        </div>
+        <div class="favorites-panel" id="favorites-panel">
+          <h3>Your favorites</h3>
+          <p class="muted" id="favorites-empty">No favorites yet. Tap a heart to add one.</p>
+          <ul class="favorites-list" id="favorites-list"></ul>
+        </div>
+        <div class="favorites-panel" id="watchlist-panel">
+          <div class="panel-head">
+            <h3>Your watchlist</h3>
+            <button class="ghost" type="button" id="watchlist-clear">Clear all</button>
+          </div>
+          <div class="watchlist-counts" id="watchlist-counts"></div>
+          <p class="muted" id="watchlist-empty">No watchlist items yet.</p>
+          <ul class="favorites-list" id="watchlist-list"></ul>
+        </div>
+        <div class="grid three" id="anime-grid">
+          <article class="card" data-anime="Naruto" data-anilist-query="Naruto">
+            <img class="card-cover" src="https://placehold.co/600x800?text=Naruto" alt="Naruto cover" />
+            <h3><a href="naruto.html">Naruto</a></h3>
+            <p class="meta">Village Hidden in the Leaves</p>
+            <p>Determination, friendship, and the dream of Hokage.</p>
+            <span class="tag">Ninja • Friendship</span>
+            <label class="watchlist-field">
+              Watchlist status
+              <select class="watchlist-select" data-watchlist>
+                <option value="">Not set</option>
+                <option value="watching">Watching</option>
+                <option value="completed">Completed</option>
+                <option value="plan">Plan to Watch</option>
+                <option value="on-hold">On Hold</option>
+                <option value="dropped">Dropped</option>
+              </select>
+            </label>
+            <button class="fav-toggle" type="button">♡ Favorite</button>
+          </article>
+          <article class="card" data-anime="Solo Leveling" data-anilist-query="Ore dake Level Up na Ken">
+            <img class="card-cover" src="https://placehold.co/600x800?text=Solo%20Leveling" alt="Solo Leveling cover" />
+            <h3><a href="solo-leveling.html">Solo Leveling</a></h3>
+            <p class="meta">Hunters, Dungeons, Power</p>
+            <p>A weak hunter rises through brutal raids and new abilities.</p>
+            <span class="tag">Fantasy • Action</span>
+            <label class="watchlist-field">
+              Watchlist status
+              <select class="watchlist-select" data-watchlist>
+                <option value="">Not set</option>
+                <option value="watching">Watching</option>
+                <option value="completed">Completed</option>
+                <option value="plan">Plan to Watch</option>
+                <option value="on-hold">On Hold</option>
+                <option value="dropped">Dropped</option>
+              </select>
+            </label>
+            <button class="fav-toggle" type="button">♡ Favorite</button>
+          </article>
+          <article class="card" data-anime="Death Note" data-anilist-query="Death Note">
+            <img class="card-cover" src="https://placehold.co/600x800?text=Death%20Note" alt="Death Note cover" />
+            <h3><a href="death-note.html">Death Note</a></h3>
+            <p class="meta">Justice, Power, Consequences</p>
+            <p>A genius student and a detective clash in a deadly mind game.</p>
+            <span class="tag">Thriller • Mind Games</span>
+            <label class="watchlist-field">
+              Watchlist status
+              <select class="watchlist-select" data-watchlist>
+                <option value="">Not set</option>
+                <option value="watching">Watching</option>
+                <option value="completed">Completed</option>
+                <option value="plan">Plan to Watch</option>
+                <option value="on-hold">On Hold</option>
+                <option value="dropped">Dropped</option>
+              </select>
+            </label>
+            <button class="fav-toggle" type="button">♡ Favorite</button>
+          </article>
+          <article class="card" data-anime="Frieren: Beyond Journey's End" data-anilist-query="Sousou no Frieren">
+            <img class="card-cover" src="https://placehold.co/600x800?text=Frieren" alt="Frieren: Beyond Journey's End cover" />
+            <h3><a href="frieren.html">Frieren: Beyond Journey's End</a></h3>
+            <p class="meta">Memories, Bonds, Time</p>
+            <p>An elf mage reflects on loss while mentoring a new generation.</p>
+            <span class="tag">Fantasy • Emotion</span>
+            <label class="watchlist-field">
+              Watchlist status
+              <select class="watchlist-select" data-watchlist>
+                <option value="">Not set</option>
+                <option value="watching">Watching</option>
+                <option value="completed">Completed</option>
+                <option value="plan">Plan to Watch</option>
+                <option value="on-hold">On Hold</option>
+                <option value="dropped">Dropped</option>
+              </select>
+            </label>
+            <button class="fav-toggle" type="button">♡ Favorite</button>
+          </article>
+          <article class="card" data-anime="Hell's Paradise" data-anilist-query="Jigokuraku">
+            <img class="card-cover" src="https://placehold.co/600x800?text=Hell%27s%20Paradise" alt="Hell's Paradise cover" />
+            <h3><a href="hells-paradise.html">Hell's Paradise</a></h3>
+            <p class="meta">Survival, Mysteries, Island</p>
+            <p>Criminals and executioners hunt a miracle elixir on a deadly island.</p>
+            <span class="tag">Dark Fantasy • Survival</span>
+            <label class="watchlist-field">
+              Watchlist status
+              <select class="watchlist-select" data-watchlist>
+                <option value="">Not set</option>
+                <option value="watching">Watching</option>
+                <option value="completed">Completed</option>
+                <option value="plan">Plan to Watch</option>
+                <option value="on-hold">On Hold</option>
+                <option value="dropped">Dropped</option>
+              </select>
+            </label>
+            <button class="fav-toggle" type="button">♡ Favorite</button>
+          </article>
+          <article class="card" data-anime="Hunter x Hunter" data-anilist-query="Hunter x Hunter (2011)">
+            <img class="card-cover" src="https://placehold.co/600x800?text=Hunter%20x%20Hunter" alt="Hunter x Hunter cover" />
+            <h3><a href="hunter-x-hunter.html">Hunter x Hunter</a></h3>
+            <p class="meta">Adventure, Trials, Friendship</p>
+            <p>Hunters-in-training explore a vast world of danger and wonder.</p>
+            <span class="tag">Shōnen • Adventure</span>
+            <label class="watchlist-field">
+              Watchlist status
+              <select class="watchlist-select" data-watchlist>
+                <option value="">Not set</option>
+                <option value="watching">Watching</option>
+                <option value="completed">Completed</option>
+                <option value="plan">Plan to Watch</option>
+                <option value="on-hold">On Hold</option>
+                <option value="dropped">Dropped</option>
+              </select>
+            </label>
+            <button class="fav-toggle" type="button">♡ Favorite</button>
+          </article>
+          <article class="card" data-anime="Fire Force" data-anilist-query="Enen no Shouboutai">
+            <img class="card-cover" src="https://placehold.co/600x800?text=Fire%20Force" alt="Fire Force cover" />
+            <h3><a href="fire-force.html">Fire Force</a></h3>
+            <p class="meta">Infernos, Flames, Brotherhood</p>
+            <p>Fire soldiers battle infernals while uncovering a fiery conspiracy.</p>
+            <span class="tag">Action • Supernatural</span>
+            <label class="watchlist-field">
+              Watchlist status
+              <select class="watchlist-select" data-watchlist>
+                <option value="">Not set</option>
+                <option value="watching">Watching</option>
+                <option value="completed">Completed</option>
+                <option value="plan">Plan to Watch</option>
+                <option value="on-hold">On Hold</option>
+                <option value="dropped">Dropped</option>
+              </select>
+            </label>
+            <button class="fav-toggle" type="button">♡ Favorite</button>
+          </article>
+          <article class="card" data-anime="Dandadan" data-anilist-query="Dandadan">
+            <img class="card-cover" src="https://placehold.co/600x800?text=Dandadan" alt="Dandadan cover" />
+            <h3><a href="dandadan.html">Dandadan</a></h3>
+            <p class="meta">Aliens, Spirits, Chaos</p>
+            <p>A wild clash of the supernatural and sci-fi with relentless energy.</p>
+            <span class="tag">Supernatural • Action</span>
+            <label class="watchlist-field">
+              Watchlist status
+              <select class="watchlist-select" data-watchlist>
+                <option value="">Not set</option>
+                <option value="watching">Watching</option>
+                <option value="completed">Completed</option>
+                <option value="plan">Plan to Watch</option>
+                <option value="on-hold">On Hold</option>
+                <option value="dropped">Dropped</option>
+              </select>
+            </label>
+            <button class="fav-toggle" type="button">♡ Favorite</button>
+          </article>
+          <article class="card" data-anime="Sakamoto Days" data-anilist-query="Sakamoto Days">
+            <img class="card-cover" src="https://placehold.co/600x800?text=Sakamoto%20Days" alt="Sakamoto Days cover" />
+            <h3><a href="sakamoto-days.html">Sakamoto Days</a></h3>
+            <p class="meta">Assassins, Comedy, Action</p>
+            <p>A retired legend protects his family with style and humor.</p>
+            <span class="tag">Comedy • Action</span>
+            <label class="watchlist-field">
+              Watchlist status
+              <select class="watchlist-select" data-watchlist>
+                <option value="">Not set</option>
+                <option value="watching">Watching</option>
+                <option value="completed">Completed</option>
+                <option value="plan">Plan to Watch</option>
+                <option value="on-hold">On Hold</option>
+                <option value="dropped">Dropped</option>
+              </select>
+            </label>
+            <button class="fav-toggle" type="button">♡ Favorite</button>
+          </article>
+          <article class="card" data-anime="One Piece" data-anilist-query="One Piece">
+            <img class="card-cover" src="https://placehold.co/600x800?text=One%20Piece" alt="One Piece cover" />
+            <h3><a href="one-piece.html">One Piece</a></h3>
+            <p class="meta">Grand Line Adventures</p>
+            <p>Freedom on the seas with the Straw Hat crew.</p>
+            <span class="tag">Pirates • Found Family</span>
+            <label class="watchlist-field">
+              Watchlist status
+              <select class="watchlist-select" data-watchlist>
+                <option value="">Not set</option>
+                <option value="watching">Watching</option>
+                <option value="completed">Completed</option>
+                <option value="plan">Plan to Watch</option>
+                <option value="on-hold">On Hold</option>
+                <option value="dropped">Dropped</option>
+              </select>
+            </label>
+            <button class="fav-toggle" type="button">♡ Favorite</button>
+          </article>
+          <article class="card" data-anime="Attack on Titan" data-anilist-query="Shingeki no Kyojin">
+            <img class="card-cover" src="https://placehold.co/600x800?text=Attack%20on%20Titan" alt="Attack on Titan cover" />
+            <h3><a href="attack-on-titan.html">Attack on Titan</a></h3>
+            <p class="meta">Walls, Titans, Truth</p>
+            <p>Survival turns into a world-shaking mystery.</p>
+            <span class="tag">Dark Fantasy • Mystery</span>
+            <label class="watchlist-field">
+              Watchlist status
+              <select class="watchlist-select" data-watchlist>
+                <option value="">Not set</option>
+                <option value="watching">Watching</option>
+                <option value="completed">Completed</option>
+                <option value="plan">Plan to Watch</option>
+                <option value="on-hold">On Hold</option>
+                <option value="dropped">Dropped</option>
+              </select>
+            </label>
+            <button class="fav-toggle" type="button">♡ Favorite</button>
+          </article>
+          <article class="card" data-anime="My Hero Academia" data-anilist-query="Boku no Hero Academia">
+            <img class="card-cover" src="https://placehold.co/600x800?text=My%20Hero%20Academia" alt="My Hero Academia cover" />
+            <h3><a href="my-hero-academia.html">My Hero Academia</a></h3>
+            <p class="meta">Quirks, Heroes, Destiny</p>
+            <p>School life and hero missions collide.</p>
+            <span class="tag">Superheroes • Growth</span>
+            <label class="watchlist-field">
+              Watchlist status
+              <select class="watchlist-select" data-watchlist>
+                <option value="">Not set</option>
+                <option value="watching">Watching</option>
+                <option value="completed">Completed</option>
+                <option value="plan">Plan to Watch</option>
+                <option value="on-hold">On Hold</option>
+                <option value="dropped">Dropped</option>
+              </select>
+            </label>
+            <button class="fav-toggle" type="button">♡ Favorite</button>
+          </article>
+          <article class="card" data-anime="Dragon Ball Z" data-anilist-query="Dragon Ball Z">
+            <img class="card-cover" src="https://placehold.co/600x800?text=Dragon%20Ball%20Z" alt="Dragon Ball Z cover" />
+            <h3><a href="dragon-ball-z.html">Dragon Ball Z</a></h3>
+            <p class="meta">Saiyans, Battles, Power</p>
+            <p>Epic fights, legendary transformations, cosmic stakes.</p>
+            <span class="tag">Action • Legacy</span>
+            <label class="watchlist-field">
+              Watchlist status
+              <select class="watchlist-select" data-watchlist>
+                <option value="">Not set</option>
+                <option value="watching">Watching</option>
+                <option value="completed">Completed</option>
+                <option value="plan">Plan to Watch</option>
+                <option value="on-hold">On Hold</option>
+                <option value="dropped">Dropped</option>
+              </select>
+            </label>
+            <button class="fav-toggle" type="button">♡ Favorite</button>
+          </article>
+          <article class="card" data-anime="Demon Slayer" data-anilist-query="Kimetsu no Yaiba">
+            <img class="card-cover" src="https://placehold.co/600x800?text=Demon%20Slayer" alt="Demon Slayer cover" />
+            <h3><a href="demon-slayer.html">Demon Slayer</a></h3>
+            <p class="meta">Blades, Breath, Resolve</p>
+            <p>A brother’s promise in a world of demons.</p>
+            <span class="tag">Dark Fantasy • Emotion</span>
+            <label class="watchlist-field">
+              Watchlist status
+              <select class="watchlist-select" data-watchlist>
+                <option value="">Not set</option>
+                <option value="watching">Watching</option>
+                <option value="completed">Completed</option>
+                <option value="plan">Plan to Watch</option>
+                <option value="on-hold">On Hold</option>
+                <option value="dropped">Dropped</option>
+              </select>
+            </label>
+            <button class="fav-toggle" type="button">♡ Favorite</button>
+          </article>
+          <article class="card" data-anime="One Punch Man" data-anilist-query="One Punch Man">
+            <img class="card-cover" src="https://placehold.co/600x800?text=One%20Punch%20Man" alt="One Punch Man cover" />
+            <h3><a href="one-punch-man.html">One Punch Man</a></h3>
+            <p class="meta">Heroes, Comedy, Power</p>
+            <p>A hero who wins too easily searches for purpose.</p>
+            <span class="tag">Comedy • Action</span>
+            <label class="watchlist-field">
+              Watchlist status
+              <select class="watchlist-select" data-watchlist>
+                <option value="">Not set</option>
+                <option value="watching">Watching</option>
+                <option value="completed">Completed</option>
+                <option value="plan">Plan to Watch</option>
+                <option value="on-hold">On Hold</option>
+                <option value="dropped">Dropped</option>
+              </select>
+            </label>
+            <button class="fav-toggle" type="button">♡ Favorite</button>
+          </article>
+          <article class="card" data-anime="Spy x Family" data-anilist-query="Spy x Family">
+            <img class="card-cover" src="https://placehold.co/600x800?text=Spy%20x%20Family" alt="Spy x Family cover" />
+            <h3><a href="spy-x-family.html">Spy x Family</a></h3>
+            <p class="meta">Espionage, Family, Secrets</p>
+            <p>A fake family hides spies, assassins, and telepathy.</p>
+            <span class="tag">Slice of Life • Espionage</span>
+            <label class="watchlist-field">
+              Watchlist status
+              <select class="watchlist-select" data-watchlist>
+                <option value="">Not set</option>
+                <option value="watching">Watching</option>
+                <option value="completed">Completed</option>
+                <option value="plan">Plan to Watch</option>
+                <option value="on-hold">On Hold</option>
+                <option value="dropped">Dropped</option>
+              </select>
+            </label>
+            <button class="fav-toggle" type="button">♡ Favorite</button>
+          </article>
+          <article class="card" data-anime="Chainsaw Man" data-anilist-query="Chainsaw Man">
+            <img class="card-cover" src="https://placehold.co/600x800?text=Chainsaw%20Man" alt="Chainsaw Man cover" />
+            <h3><a href="chainsaw-man.html">Chainsaw Man</a></h3>
+            <p class="meta">Devils, Dreams, Chaos</p>
+            <p>Denji fights devils while chasing a better life.</p>
+            <span class="tag">Dark Fantasy • Action</span>
+            <label class="watchlist-field">
+              Watchlist status
+              <select class="watchlist-select" data-watchlist>
+                <option value="">Not set</option>
+                <option value="watching">Watching</option>
+                <option value="completed">Completed</option>
+                <option value="plan">Plan to Watch</option>
+                <option value="on-hold">On Hold</option>
+                <option value="dropped">Dropped</option>
+              </select>
+            </label>
+            <button class="fav-toggle" type="button">♡ Favorite</button>
+          </article>
+          <article class="card" data-anime="Jujutsu Kaisen" data-anilist-query="Jujutsu Kaisen">
+            <img class="card-cover" src="https://placehold.co/600x800?text=Jujutsu%20Kaisen" alt="Jujutsu Kaisen cover" />
+            <h3><a href="jujutsu-kaisen.html">Jujutsu Kaisen</a></h3>
+            <p class="meta">Curses, Sorcery, Fate</p>
+            <p>Yuji battles curses after becoming Sukuna’s host.</p>
+            <span class="tag">Supernatural • Battles</span>
+            <label class="watchlist-field">
+              Watchlist status
+              <select class="watchlist-select" data-watchlist>
+                <option value="">Not set</option>
+                <option value="watching">Watching</option>
+                <option value="completed">Completed</option>
+                <option value="plan">Plan to Watch</option>
+                <option value="on-hold">On Hold</option>
+                <option value="dropped">Dropped</option>
+              </select>
+            </label>
+            <button class="fav-toggle" type="button">♡ Favorite</button>
+          </article>
+          <article class="card" data-anime="Black Clover" data-anilist-query="Black Clover">
+            <img class="card-cover" src="https://placehold.co/600x800?text=Black%20Clover" alt="Black Clover cover" />
+            <h3><a href="black-clover.html">Black Clover</a></h3>
+            <p class="meta">Magic, Rivalry, Determination</p>
+            <p>Asta fights for the Wizard King title without magic.</p>
+            <span class="tag">Shōnen • Magic</span>
+            <label class="watchlist-field">
+              Watchlist status
+              <select class="watchlist-select" data-watchlist>
+                <option value="">Not set</option>
+                <option value="watching">Watching</option>
+                <option value="completed">Completed</option>
+                <option value="plan">Plan to Watch</option>
+                <option value="on-hold">On Hold</option>
+                <option value="dropped">Dropped</option>
+              </select>
+            </label>
+            <button class="fav-toggle" type="button">♡ Favorite</button>
+          </article>
+          <article class="card" data-anime="Haikyu!!" data-anilist-query="Haikyuu!!">
+            <img class="card-cover" src="https://placehold.co/600x800?text=Haikyu!!" alt="Haikyu!! cover" />
+            <h3><a href="haikyu.html">Haikyu!!</a></h3>
+            <p class="meta">Volleyball, Teamwork, Growth</p>
+            <p>Underdog players chase nationals with grit and heart.</p>
+            <span class="tag">Sports • Teamwork</span>
+            <label class="watchlist-field">
+              Watchlist status
+              <select class="watchlist-select" data-watchlist>
+                <option value="">Not set</option>
+                <option value="watching">Watching</option>
+                <option value="completed">Completed</option>
+                <option value="plan">Plan to Watch</option>
+                <option value="on-hold">On Hold</option>
+                <option value="dropped">Dropped</option>
+              </select>
+            </label>
+            <button class="fav-toggle" type="button">♡ Favorite</button>
+          </article>
+          <article class="card" data-anime="Bleach" data-anilist-query="Bleach">
+            <img class="card-cover" src="https://placehold.co/600x800?text=Bleach" alt="Bleach cover" />
+            <h3><a href="bleach.html">Bleach</a></h3>
+            <p class="meta">Soul Reapers, Spirits, Battles</p>
+            <p>Ichigo gains Soul Reaper powers to defend the living and dead.</p>
+            <span class="tag">Supernatural • Action</span>
+            <label class="watchlist-field">
+              Watchlist status
+              <select class="watchlist-select" data-watchlist>
+                <option value="">Not set</option>
+                <option value="watching">Watching</option>
+                <option value="completed">Completed</option>
+                <option value="plan">Plan to Watch</option>
+                <option value="on-hold">On Hold</option>
+                <option value="dropped">Dropped</option>
+              </select>
+            </label>
+            <button class="fav-toggle" type="button">♡ Favorite</button>
+          </article>
+          <article class="card" data-anime="JoJo's Bizarre Adventure" data-anilist-query="JoJo no Kimyou na Bouken">
+            <img class="card-cover" src="https://placehold.co/600x800?text=JoJo" alt="JoJo cover" />
+            <h3><a href="jojos-bizarre-adventure.html">JoJo's Bizarre Adventure</a></h3>
+            <p class="meta">Bloodlines, Stands, Styles</p>
+            <p>The Joestar family battles ancient evils across generations.</p>
+            <span class="tag">Action • Supernatural</span>
+            <label class="watchlist-field">
+              Watchlist status
+              <select class="watchlist-select" data-watchlist>
+                <option value="">Not set</option>
+                <option value="watching">Watching</option>
+                <option value="completed">Completed</option>
+                <option value="plan">Plan to Watch</option>
+                <option value="on-hold">On Hold</option>
+                <option value="dropped">Dropped</option>
+              </select>
+            </label>
+            <button class="fav-toggle" type="button">♡ Favorite</button>
+          </article>
+          <article class="card" data-anime="Horimiya" data-anilist-query="Horimiya">
+            <img class="card-cover" src="https://placehold.co/600x800?text=Horimiya" alt="Horimiya cover" />
+            <h3><a href="horimiya.html">Horimiya</a></h3>
+            <p class="meta">School, Romance, Secrets</p>
+            <p>Hori and Miyamura discover each other's hidden sides.</p>
+            <span class="tag">Romance • Slice of Life</span>
+            <label class="watchlist-field">
+              Watchlist status
+              <select class="watchlist-select" data-watchlist>
+                <option value="">Not set</option>
+                <option value="watching">Watching</option>
+                <option value="completed">Completed</option>
+                <option value="plan">Plan to Watch</option>
+                <option value="on-hold">On Hold</option>
+                <option value="dropped">Dropped</option>
+              </select>
+            </label>
+            <button class="fav-toggle" type="button">♡ Favorite</button>
+          </article>
+          <article class="card" data-anime="Blue Box" data-anilist-query="Ao no Hako">
+            <img class="card-cover" src="https://placehold.co/600x800?text=Blue%20Box" alt="Blue Box cover" />
+            <h3><a href="blue-box.html">Blue Box</a></h3>
+            <p class="meta">Badminton, Romance, Goals</p>
+            <p>Taiki navigates sports dreams and a crush under one roof.</p>
+            <span class="tag">Sports • Romance</span>
+            <label class="watchlist-field">
+              Watchlist status
+              <select class="watchlist-select" data-watchlist>
+                <option value="">Not set</option>
+                <option value="watching">Watching</option>
+                <option value="completed">Completed</option>
+                <option value="plan">Plan to Watch</option>
+                <option value="on-hold">On Hold</option>
+                <option value="dropped">Dropped</option>
+              </select>
+            </label>
+            <button class="fav-toggle" type="button">♡ Favorite</button>
+          </article>
+          <article class="card" data-anime="Fullmetal Alchemist: Brotherhood" data-anilist-query="Fullmetal Alchemist: Brotherhood">
+            <img class="card-cover" src="https://placehold.co/600x800?text=FMA+Brotherhood" alt="Fullmetal Alchemist: Brotherhood cover" />
+            <h3><a href="fullmetal-alchemist.html">Fullmetal Alchemist: Brotherhood</a></h3>
+            <p class="meta">Alchemy, Sacrifice, Truth</p>
+            <p>Two brothers uncover a conspiracy threatening all of humanity.</p>
+            <span class="tag">Action • Fantasy</span>
+            <label class="watchlist-field">
+              Watchlist status
+              <select class="watchlist-select" data-watchlist>
+                <option value="">Not set</option>
+                <option value="watching">Watching</option>
+                <option value="completed">Completed</option>
+                <option value="plan">Plan to Watch</option>
+                <option value="on-hold">On Hold</option>
+                <option value="dropped">Dropped</option>
+              </select>
+            </label>
+            <button class="fav-toggle" type="button">♡ Favorite</button>
+          </article>
+          <article class="card" data-anime="Vinland Saga" data-anilist-query="Vinland Saga">
+            <img class="card-cover" src="https://placehold.co/600x800?text=Vinland+Saga" alt="Vinland Saga cover" />
+            <h3><a href="vinland-saga.html">Vinland Saga</a></h3>
+            <p class="meta">Vikings, Vengeance, Redemption</p>
+            <p>A young warrior discovers true strength beyond violence.</p>
+            <span class="tag">Action • Drama</span>
+            <label class="watchlist-field">
+              Watchlist status
+              <select class="watchlist-select" data-watchlist>
+                <option value="">Not set</option>
+                <option value="watching">Watching</option>
+                <option value="completed">Completed</option>
+                <option value="plan">Plan to Watch</option>
+                <option value="on-hold">On Hold</option>
+                <option value="dropped">Dropped</option>
+              </select>
+            </label>
+            <button class="fav-toggle" type="button">♡ Favorite</button>
+          </article>
+          <article class="card" data-anime="Steins;Gate" data-anilist-query="Steins;Gate">
+            <img class="card-cover" src="https://placehold.co/600x800?text=Steins%3BGate" alt="Steins;Gate cover" />
+            <h3><a href="steins-gate.html">Steins;Gate</a></h3>
+            <p class="meta">Time Travel, Loss, Science</p>
+            <p>A mad scientist must undo every timeline change before all is lost.</p>
+            <span class="tag">Sci-Fi • Thriller</span>
+            <label class="watchlist-field">
+              Watchlist status
+              <select class="watchlist-select" data-watchlist>
+                <option value="">Not set</option>
+                <option value="watching">Watching</option>
+                <option value="completed">Completed</option>
+                <option value="plan">Plan to Watch</option>
+                <option value="on-hold">On Hold</option>
+                <option value="dropped">Dropped</option>
+              </select>
+            </label>
+            <button class="fav-toggle" type="button">♡ Favorite</button>
+          </article>
+          <article class="card" data-anime="Mashle: Magic and Muscles" data-anilist-query="Mashle: Magic and Muscles">
+            <img class="card-cover" src="https://placehold.co/600x800?text=Mashle" alt="Mashle: Magic and Muscles cover" />
+            <h3><a href="mashle.html">Mashle: Magic and Muscles</a></h3>
+            <p class="meta">Muscles, Magic, Mayhem</p>
+            <p>One magicless boy solves every problem with brute physical force.</p>
+            <span class="tag">Action • Comedy</span>
+            <label class="watchlist-field">
+              Watchlist status
+              <select class="watchlist-select" data-watchlist>
+                <option value="">Not set</option>
+                <option value="watching">Watching</option>
+                <option value="completed">Completed</option>
+                <option value="plan">Plan to Watch</option>
+                <option value="on-hold">On Hold</option>
+                <option value="dropped">Dropped</option>
+              </select>
+            </label>
+            <button class="fav-toggle" type="button">♡ Favorite</button>
+          </article>
+
+          <article class="card" data-anime="Gintama" data-anilist-query="Gintama">
+            <img class="card-cover" src="https://placehold.co/600x800?text=Gintama" alt="Gintama cover" />
+            <h3><a href="gintama.html">Gintama</a></h3>
+            <p class="meta">Samurai. Aliens. Chaos.</p>
+            <p>In a feudal Japan overrun by aliens, a lazy samurai and his odd-jobs crew turn absurdist comedy into genuine emotion.</p>
+            <span class="tag">Comedy • Action • Sci-Fi</span>
+            <label class="watchlist-field">
+              Watchlist status
+              <select class="watchlist-select" data-watchlist>
+                <option value="">Not set</option>
+                <option value="watching">Watching</option>
+                <option value="completed">Completed</option>
+                <option value="plan">Plan to Watch</option>
+                <option value="on-hold">On Hold</option>
+                <option value="dropped">Dropped</option>
+              </select>
+            </label>
+            <button class="fav-toggle" type="button">♡ Favorite</button>
+          </article>
+
+          <article class="card" data-anime="Re:Zero" data-anilist-query="Re:Zero kara Hajimeru Isekai Seikatsu">
+            <img class="card-cover" src="https://placehold.co/600x800?text=Re:Zero" alt="Re:Zero cover" />
+            <h3><a href="re-zero.html">Re:Zero − Starting Life in Another World</a></h3>
+            <p class="meta">Die. Rewind. Suffer. Repeat.</p>
+            <p>A teenager is transported to a fantasy world with one terrifying ability: he revives at a checkpoint every time he dies.</p>
+            <span class="tag">Dark Fantasy • Psychological • Drama</span>
+            <label class="watchlist-field">
+              Watchlist status
+              <select class="watchlist-select" data-watchlist>
+                <option value="">Not set</option>
+                <option value="watching">Watching</option>
+                <option value="completed">Completed</option>
+                <option value="plan">Plan to Watch</option>
+                <option value="on-hold">On Hold</option>
+                <option value="dropped">Dropped</option>
+              </select>
+            </label>
+            <button class="fav-toggle" type="button">♡ Favorite</button>
+          </article>
+
+          <article class="card" data-anime="Sword Art Online" data-anilist-query="Sword Art Online">
+            <img class="card-cover" src="https://placehold.co/600x800?text=SAO" alt="Sword Art Online cover" />
+            <h3><a href="sword-art-online.html">Sword Art Online</a></h3>
+            <p class="meta">Log In. Fight. Survive.</p>
+            <p>Ten thousand players are trapped in a VR fantasy game where death in-game means death in real life. Kirito must clear all 100 floors.</p>
+            <span class="tag">Action • Fantasy • Romance</span>
+            <label class="watchlist-field">
+              Watchlist status
+              <select class="watchlist-select" data-watchlist>
+                <option value="">Not set</option>
+                <option value="watching">Watching</option>
+                <option value="completed">Completed</option>
+                <option value="plan">Plan to Watch</option>
+                <option value="on-hold">On Hold</option>
+                <option value="dropped">Dropped</option>
+              </select>
+            </label>
+            <button class="fav-toggle" type="button">♡ Favorite</button>
+          </article>
+
+          <article class="card" data-anime="Spirited Away" data-anilist-query="Spirited Away">
+            <img class="card-cover" src="https://placehold.co/600x800?text=Spirited%20Away" alt="Spirited Away cover" />
+            <h3><a href="spirited-away.html">Spirited Away</a></h3>
+            <p class="meta">Spirit World, Magic, Growth</p>
+            <p>Chihiro stumbles into a magical spirit world and must work in a bathhouse to rescue her transformed parents.</p>
+            <span class="tag">Fantasy • Coming-of-Age</span>
+            <label class="watchlist-field">
+              Watchlist status
+              <select class="watchlist-select" data-watchlist>
+                <option value="">Not set</option>
+                <option value="watching">Watching</option>
+                <option value="completed">Completed</option>
+                <option value="plan">Plan to Watch</option>
+                <option value="on-hold">On Hold</option>
+                <option value="dropped">Dropped</option>
+              </select>
+            </label>
+            <button class="fav-toggle" type="button">♡ Favorite</button>
+          </article>
+
+          <article class="card" data-anime="Code Geass" data-anilist-query="Code Geass">
+            <img class="card-cover" src="https://placehold.co/600x800?text=Code%20Geass" alt="Code Geass cover" />
+            <h3><a href="code-geass.html">Code Geass</a></h3>
+            <p class="meta">Revolution, Geass, Chess</p>
+            <p>Exiled prince Lelouch gains a supernatural power and leads a rebellion against an empire from the shadows.</p>
+            <span class="tag">Mecha • Political Thriller</span>
+            <label class="watchlist-field">
+              Watchlist status
+              <select class="watchlist-select" data-watchlist>
+                <option value="">Not set</option>
+                <option value="watching">Watching</option>
+                <option value="completed">Completed</option>
+                <option value="plan">Plan to Watch</option>
+                <option value="on-hold">On Hold</option>
+                <option value="dropped">Dropped</option>
+              </select>
+            </label>
+            <button class="fav-toggle" type="button">♡ Favorite</button>
+          </article>
+
+          <article class="card" data-anime="Berserk" data-anilist-query="Berserk">
+            <img class="card-cover" src="https://placehold.co/600x800?text=Berserk" alt="Berserk cover" />
+            <h3><a href="berserk.html">Berserk</a></h3>
+            <p class="meta">Darkness, Fate, Swords</p>
+            <p>Guts wages a one-man war against demonic forces while haunted by a shattering betrayal at the Eclipse.</p>
+            <span class="tag">Dark Fantasy • Tragedy</span>
+            <label class="watchlist-field">
+              Watchlist status
+              <select class="watchlist-select" data-watchlist>
+                <option value="">Not set</option>
+                <option value="watching">Watching</option>
+                <option value="completed">Completed</option>
+                <option value="plan">Plan to Watch</option>
+                <option value="on-hold">On Hold</option>
+                <option value="dropped">Dropped</option>
+              </select>
+            </label>
+            <button class="fav-toggle" type="button">♡ Favorite</button>
+          </article>
+
+          <article class="card" data-anime="Cyberpunk: Edgerunners" data-anilist-query="Cyberpunk Edgerunners">
+            <img class="card-cover" src="https://placehold.co/600x800?text=Cyberpunk%3A+Edgerunners" alt="Cyberpunk: Edgerunners cover" />
+            <h3><a href="cyberpunk-edgerunners.html">Cyberpunk: Edgerunners</a></h3>
+            <p class="meta">Night City, Chrome, Survival</p>
+            <p>A street kid fights to stay alive in a technology-obsessed mega city by becoming an outlaw mercenary.</p>
+            <span class="tag">Cyberpunk • Action</span>
+            <label class="watchlist-field">
+              Watchlist status
+              <select class="watchlist-select" data-watchlist>
+                <option value="">Not set</option>
+                <option value="watching">Watching</option>
+                <option value="completed">Completed</option>
+                <option value="plan">Plan to Watch</option>
+                <option value="on-hold">On Hold</option>
+                <option value="dropped">Dropped</option>
+              </select>
+            </label>
+            <button class="fav-toggle" type="button">♡ Favorite</button>
+          </article>
+
+          <article class="card" data-anime="Monster" data-anilist-query="Monster">
+            <img class="card-cover" src="https://placehold.co/600x800?text=Monster" alt="Monster cover" />
+            <h3><a href="monster.html">Monster</a></h3>
+            <p class="meta">Thriller, Morality, Pursuit</p>
+            <p>Brain surgeon Tenma hunts the monster he once saved — a serial killer named Johan across post-Cold War Europe.</p>
+            <span class="tag">Psychological Thriller • Mystery</span>
+            <label class="watchlist-field">
+              Watchlist status
+              <select class="watchlist-select" data-watchlist>
+                <option value="">Not set</option>
+                <option value="watching">Watching</option>
+                <option value="completed">Completed</option>
+                <option value="plan">Plan to Watch</option>
+                <option value="on-hold">On Hold</option>
+                <option value="dropped">Dropped</option>
+              </select>
+            </label>
+            <button class="fav-toggle" type="button">♡ Favorite</button>
+          </article>
+
+          <article class="card" data-anime="Cowboy Bebop" data-anilist-query="Cowboy Bebop">
+            <img class="card-cover" src="https://placehold.co/600x800?text=Cowboy%20Bebop" alt="Cowboy Bebop cover" />
+            <h3><a href="cowboy-bebop.html">Cowboy Bebop</a></h3>
+            <p class="meta">Space, Jazz, Bounty Hunters</p>
+            <p>A crew of bounty hunters drift through space, each carrying a past they can never fully escape.</p>
+            <span class="tag">Sci-Fi • Neo-Noir</span>
+            <label class="watchlist-field">
+              Watchlist status
+              <select class="watchlist-select" data-watchlist>
+                <option value="">Not set</option>
+                <option value="watching">Watching</option>
+                <option value="completed">Completed</option>
+                <option value="plan">Plan to Watch</option>
+                <option value="on-hold">On Hold</option>
+                <option value="dropped">Dropped</option>
+              </select>
+            </label>
+            <button class="fav-toggle" type="button">♡ Favorite</button>
+          </article>
+
+          <article class="card" data-anime="Mob Psycho 100" data-anilist-query="Mob Psycho 100">
+            <img class="card-cover" src="https://placehold.co/600x800?text=Mob%20Psycho%20100" alt="Mob Psycho 100 cover" />
+            <h3><a href="mob-psycho.html">Mob Psycho 100</a></h3>
+            <p class="meta">Psychic, Growth, Humility</p>
+            <p>Mob is a powerful psychic who wants nothing more than to live a normal life and deal with his overwhelming emotions.</p>
+            <span class="tag">Supernatural • Slice of Life</span>
+            <label class="watchlist-field">
+              Watchlist status
+              <select class="watchlist-select" data-watchlist>
+                <option value="">Not set</option>
+                <option value="watching">Watching</option>
+                <option value="completed">Completed</option>
+                <option value="plan">Plan to Watch</option>
+                <option value="on-hold">On Hold</option>
+                <option value="dropped">Dropped</option>
+              </select>
+            </label>
+            <button class="fav-toggle" type="button">♡ Favorite</button>
+          </article>
+
+          <article class="card" data-anime="Dr. Stone" data-anilist-query="Dr. Stone">
+            <img class="card-cover" src="https://placehold.co/600x800?text=Dr.+Stone" alt="Dr. Stone cover" />
+            <h3><a href="dr-stone.html">Dr. Stone</a></h3>
+            <p class="meta">Science, Survival, Rebuilding</p>
+            <p>After all of humanity is petrified, genius Senku uses science alone to revive civilization from scratch.</p>
+            <span class="tag">Adventure • Science</span>
+            <label class="watchlist-field">
+              Watchlist status
+              <select class="watchlist-select" data-watchlist>
+                <option value="">Not set</option>
+                <option value="watching">Watching</option>
+                <option value="completed">Completed</option>
+                <option value="plan">Plan to Watch</option>
+                <option value="on-hold">On Hold</option>
+                <option value="dropped">Dropped</option>
+              </select>
+            </label>
+            <button class="fav-toggle" type="button">♡ Favorite</button>
+          </article>
+
+          <article class="card" data-anime="Tokyo Ghoul" data-anilist-query="Tokyo Ghoul">
+            <img class="card-cover" src="https://placehold.co/600x800?text=Tokyo%20Ghoul" alt="Tokyo Ghoul cover" />
+            <h3><a href="tokyo-ghoul.html">Tokyo Ghoul</a></h3>
+            <p class="meta">Ghouls, Identity, Survival</p>
+            <p>College student Kaneki is transformed into a half-ghoul and must navigate a hidden world of predators and hunters.</p>
+            <span class="tag">Dark Fantasy • Horror</span>
+            <label class="watchlist-field">
+              Watchlist status
+              <select class="watchlist-select" data-watchlist>
+                <option value="">Not set</option>
+                <option value="watching">Watching</option>
+                <option value="completed">Completed</option>
+                <option value="plan">Plan to Watch</option>
+                <option value="on-hold">On Hold</option>
+                <option value="dropped">Dropped</option>
+              </select>
+            </label>
+            <button class="fav-toggle" type="button">♡ Favorite</button>
+          </article>
+
+          <article class="card" data-anime="Rascal Does Not Dream of Bunny Girl Senpai" data-anilist-query="Seishun Buta Yarou wa Bunny Girl Senpai no Yume wo Minai">
+            <img class="card-cover" src="https://placehold.co/600x800?text=Bunny+Girl+Senpai" alt="Rascal Does Not Dream of Bunny Girl Senpai cover" />
+            <h3><a href="rascal-bunny-girl.html">Rascal Does Not Dream of Bunny Girl Senpai</a></h3>
+            <p class="meta">Adolescent Syndrome, Science, Romance</p>
+            <p>A girl no one can see, a boy who asks why — exploring the invisible wounds of adolescence.</p>
+            <span class="tag">Romance • Supernatural • Drama</span>
+            <label class="watchlist-field">Watchlist status
+              <select class="watchlist-select" data-watchlist>
+                <option value="">Not set</option><option value="watching">Watching</option><option value="completed">Completed</option><option value="plan">Plan to Watch</option><option value="on-hold">On Hold</option><option value="dropped">Dropped</option>
+              </select>
+            </label>
+            <button class="fav-toggle" type="button">♡ Favorite</button>
+          </article>
+
+          <article class="card" data-anime="Seven Deadly Sins" data-anilist-query="Nanatsu no Taizai">
+            <img class="card-cover" src="https://placehold.co/600x800?text=Seven+Deadly+Sins" alt="Seven Deadly Sins cover" />
+            <h3><a href="seven-deadly-sins.html">Seven Deadly Sins</a></h3>
+            <p class="meta">Knights, Magic, Adventure</p>
+            <p>A princess enlists the help of legendary disgraced knights to reclaim her kingdom.</p>
+            <span class="tag">Fantasy • Action</span>
+            <label class="watchlist-field">Watchlist status
+              <select class="watchlist-select" data-watchlist>
+                <option value="">Not set</option><option value="watching">Watching</option><option value="completed">Completed</option><option value="plan">Plan to Watch</option><option value="on-hold">On Hold</option><option value="dropped">Dropped</option>
+              </select>
+            </label>
+            <button class="fav-toggle" type="button">♡ Favorite</button>
+          </article>
+
+          <article class="card" data-anime="My Dress-Up Darling" data-anilist-query="Sono Bisque Doll wa Koi wo Suru">
+            <img class="card-cover" src="https://placehold.co/600x800?text=My+Dress-Up+Darling" alt="My Dress-Up Darling cover" />
+            <h3><a href="my-dress-up-darling.html">My Dress-Up Darling</a></h3>
+            <p class="meta">Cosplay, Craft, Romance</p>
+            <p>A skilled doll-maker and a bold cosplayer team up, stitching together an unexpected bond.</p>
+            <span class="tag">Romance • Slice of Life</span>
+            <label class="watchlist-field">Watchlist status
+              <select class="watchlist-select" data-watchlist>
+                <option value="">Not set</option><option value="watching">Watching</option><option value="completed">Completed</option><option value="plan">Plan to Watch</option><option value="on-hold">On Hold</option><option value="dropped">Dropped</option>
+              </select>
+            </label>
+            <button class="fav-toggle" type="button">♡ Favorite</button>
+          </article>
+
+          <article class="card" data-anime="Classroom of the Elite" data-anilist-query="Youkoso Jitsuryoku Shijou Shugi no Kyoushitsu e">
+            <img class="card-cover" src="https://placehold.co/600x800?text=Classroom+of+the+Elite" alt="Classroom of the Elite cover" />
+            <h3><a href="classroom-of-the-elite.html">Classroom of the Elite</a></h3>
+            <p class="meta">Merit, Manipulation, Strategy</p>
+            <p>At a prestigious school, students compete ruthlessly for class rank — and one quiet boy plays them all like chess pieces.</p>
+            <span class="tag">Psychological • Drama</span>
+            <label class="watchlist-field">Watchlist status
+              <select class="watchlist-select" data-watchlist>
+                <option value="">Not set</option><option value="watching">Watching</option><option value="completed">Completed</option><option value="plan">Plan to Watch</option><option value="on-hold">On Hold</option><option value="dropped">Dropped</option>
+              </select>
+            </label>
+            <button class="fav-toggle" type="button">♡ Favorite</button>
+          </article>
+
+          <article class="card" data-anime="Chained Soldier" data-anilist-query="Mato Seihei no Slave">
+            <img class="card-cover" src="https://placehold.co/600x800?text=Chained+Soldier" alt="Chained Soldier cover" />
+            <h3><a href="chained-soldier.html">Chained Soldier</a></h3>
+            <p class="meta">Demons, Contracts, Power</p>
+            <p>A boy pulled into a demon-fighting force forms a unique contract with a commander whose power comes with strings attached.</p>
+            <span class="tag">Action • Fantasy</span>
+            <label class="watchlist-field">Watchlist status
+              <select class="watchlist-select" data-watchlist>
+                <option value="">Not set</option><option value="watching">Watching</option><option value="completed">Completed</option><option value="plan">Plan to Watch</option><option value="on-hold">On Hold</option><option value="dropped">Dropped</option>
+              </select>
+            </label>
+            <button class="fav-toggle" type="button">♡ Favorite</button>
+          </article>
+
+          <article class="card" data-anime="That Time I Got Reincarnated as a Slime" data-anilist-query="Tensei shitara Slime Datta Ken">
+            <img class="card-cover" src="https://placehold.co/600x800?text=Reincarnated+as+a+Slime" alt="That Time I Got Reincarnated as a Slime cover" />
+            <h3><a href="reincarnated-as-slime.html">That Time I Got Reincarnated as a Slime</a></h3>
+            <p class="meta">Isekai, Nation-Building, Monsters</p>
+            <p>A salaryman reborn as a slime acquires powerful skills and gathers monsters to build a thriving nation.</p>
+            <span class="tag">Isekai • Fantasy</span>
+            <label class="watchlist-field">Watchlist status
+              <select class="watchlist-select" data-watchlist>
+                <option value="">Not set</option><option value="watching">Watching</option><option value="completed">Completed</option><option value="plan">Plan to Watch</option><option value="on-hold">On Hold</option><option value="dropped">Dropped</option>
+              </select>
+            </label>
+            <button class="fav-toggle" type="button">♡ Favorite</button>
+          </article>
+
+          <article class="card" data-anime="Baki" data-anilist-query="Baki">
+            <img class="card-cover" src="https://placehold.co/600x800?text=Baki" alt="Baki cover" />
+            <h3><a href="baki.html">Baki</a></h3>
+            <p class="meta">Fighting, Strength, Legacy</p>
+            <p>Baki Hanma trains relentlessly to surpass his father — the world's strongest man — in brutal underground matches.</p>
+            <span class="tag">Martial Arts • Action</span>
+            <label class="watchlist-field">Watchlist status
+              <select class="watchlist-select" data-watchlist>
+                <option value="">Not set</option><option value="watching">Watching</option><option value="completed">Completed</option><option value="plan">Plan to Watch</option><option value="on-hold">On Hold</option><option value="dropped">Dropped</option>
+              </select>
+            </label>
+            <button class="fav-toggle" type="button">♡ Favorite</button>
+          </article>
+
+          <article class="card" data-anime="Boruto" data-anilist-query="Boruto: Naruto Next Generations">
+            <img class="card-cover" src="https://placehold.co/600x800?text=Boruto" alt="Boruto cover" />
+            <h3><a href="boruto.html">Boruto</a></h3>
+            <p class="meta">New Generation, Ninja, Legacy</p>
+            <p>Naruto's son Boruto forges his own path as a ninja, stepping out of his father's legendary shadow.</p>
+            <span class="tag">Ninja • Action</span>
+            <label class="watchlist-field">Watchlist status
+              <select class="watchlist-select" data-watchlist>
+                <option value="">Not set</option><option value="watching">Watching</option><option value="completed">Completed</option><option value="plan">Plan to Watch</option><option value="on-hold">On Hold</option><option value="dropped">Dropped</option>
+              </select>
+            </label>
+            <button class="fav-toggle" type="button">♡ Favorite</button>
+          </article>
+
+          <article class="card" data-anime="Fairy Tail" data-anilist-query="Fairy Tail">
+            <img class="card-cover" src="https://placehold.co/600x800?text=Fairy+Tail" alt="Fairy Tail cover" />
+            <h3><a href="fairy-tail.html">Fairy Tail</a></h3>
+            <p class="meta">Guild, Magic, Friendship</p>
+            <p>Mage guild Fairy Tail and their wild adventures prove that bonds between nakama are the greatest magic of all.</p>
+            <span class="tag">Magic • Adventure</span>
+            <label class="watchlist-field">Watchlist status
+              <select class="watchlist-select" data-watchlist>
+                <option value="">Not set</option><option value="watching">Watching</option><option value="completed">Completed</option><option value="plan">Plan to Watch</option><option value="on-hold">On Hold</option><option value="dropped">Dropped</option>
+              </select>
+            </label>
+            <button class="fav-toggle" type="button">♡ Favorite</button>
+          </article>
+
+          <article class="card" data-anime="The Rising of the Shield Hero" data-anilist-query="Tate no Yuusha no Nariagari">
+            <img class="card-cover" src="https://placehold.co/600x800?text=Shield+Hero" alt="The Rising of the Shield Hero cover" />
+            <h3><a href="rising-shield-hero.html">The Rising of the Shield Hero</a></h3>
+            <p class="meta">Isekai, Betrayal, Redemption</p>
+            <p>Falsely accused and cast out, the Shield Hero must rise through a world that despises him to become its true savior.</p>
+            <span class="tag">Isekai • Dark Fantasy</span>
+            <label class="watchlist-field">Watchlist status
+              <select class="watchlist-select" data-watchlist>
+                <option value="">Not set</option><option value="watching">Watching</option><option value="completed">Completed</option><option value="plan">Plan to Watch</option><option value="on-hold">On Hold</option><option value="dropped">Dropped</option>
+              </select>
+            </label>
+            <button class="fav-toggle" type="button">♡ Favorite</button>
+          </article>
+
+          <article class="card" data-anime="Assassination Classroom" data-anilist-query="Ansatsu Kyoushitsu">
+            <img class="card-cover" src="https://placehold.co/600x800?text=Assassination+Classroom" alt="Assassination Classroom cover" />
+            <h3><a href="assassination-classroom.html">Assassination Classroom</a></h3>
+            <p class="meta">Teacher, Targets, Growth</p>
+            <p>A monster who destroyed the moon becomes a middle school teacher — and his students must kill him before graduation.</p>
+            <span class="tag">Comedy • Action • Drama</span>
+            <label class="watchlist-field">Watchlist status
+              <select class="watchlist-select" data-watchlist>
+                <option value="">Not set</option><option value="watching">Watching</option><option value="completed">Completed</option><option value="plan">Plan to Watch</option><option value="on-hold">On Hold</option><option value="dropped">Dropped</option>
+              </select>
+            </label>
+            <button class="fav-toggle" type="button">♡ Favorite</button>
+          </article>
+
+          <article class="card" data-anime="Your Name." data-anilist-query="Kimi no Na wa.">
+            <img class="card-cover" src="https://placehold.co/600x800?text=Your+Name." alt="Your Name. cover" />
+            <h3><a href="your-name.html">Your Name.</a></h3>
+            <p class="meta">Body-Swap, Fate, Love</p>
+            <p>Two strangers swap bodies and begin to fall for one another — but the connection between them hides a heartbreaking secret.</p>
+            <span class="tag">Romance • Drama • Supernatural</span>
+            <label class="watchlist-field">Watchlist status
+              <select class="watchlist-select" data-watchlist>
+                <option value="">Not set</option><option value="watching">Watching</option><option value="completed">Completed</option><option value="plan">Plan to Watch</option><option value="on-hold">On Hold</option><option value="dropped">Dropped</option>
+              </select>
+            </label>
+            <button class="fav-toggle" type="button">♡ Favorite</button>
+          </article>
+
+          <article class="card" data-anime="Princess Mononoke" data-anilist-query="Mononoke Hime">
+            <img class="card-cover" src="https://placehold.co/600x800?text=Princess+Mononoke" alt="Princess Mononoke cover" />
+            <h3><a href="princess-mononoke.html">Princess Mononoke</a></h3>
+            <p class="meta">Nature, War, Balance</p>
+            <p>A cursed prince is caught between the spirits of the forest and an iron-town's war against nature itself.</p>
+            <span class="tag">Fantasy • Drama • Studio Ghibli</span>
+            <label class="watchlist-field">Watchlist status
+              <select class="watchlist-select" data-watchlist>
+                <option value="">Not set</option><option value="watching">Watching</option><option value="completed">Completed</option><option value="plan">Plan to Watch</option><option value="on-hold">On Hold</option><option value="dropped">Dropped</option>
+              </select>
+            </label>
+            <button class="fav-toggle" type="button">♡ Favorite</button>
+          </article>
+
+          <article class="card" data-anime="Howl's Moving Castle" data-anilist-query="Howl no Ugoku Shiro">
+            <img class="card-cover" src="https://placehold.co/600x800?text=Howl's+Moving+Castle" alt="Howl's Moving Castle cover" />
+            <h3><a href="howls-moving-castle.html">Howl's Moving Castle</a></h3>
+            <p class="meta">Magic, Curses, Love</p>
+            <p>A young woman cursed to be old seeks shelter in the eccentric wizard Howl's enchanted walking castle.</p>
+            <span class="tag">Fantasy • Romance • Studio Ghibli</span>
+            <label class="watchlist-field">Watchlist status
+              <select class="watchlist-select" data-watchlist>
+                <option value="">Not set</option><option value="watching">Watching</option><option value="completed">Completed</option><option value="plan">Plan to Watch</option><option value="on-hold">On Hold</option><option value="dropped">Dropped</option>
+              </select>
+            </label>
+            <button class="fav-toggle" type="button">♡ Favorite</button>
+          </article>
+
+          <article class="card" data-anime="A Silent Voice" data-anilist-query="Koe no Katachi">
+            <img class="card-cover" src="https://placehold.co/600x800?text=A+Silent+Voice" alt="A Silent Voice cover" />
+            <h3><a href="a-silent-voice.html">A Silent Voice</a></h3>
+            <p class="meta">Redemption, Regret, Connection</p>
+            <p>A former bully seeks atonement by reconnecting with the deaf girl he once tormented — a story about learning to forgive yourself.</p>
+            <span class="tag">Drama • Romance</span>
+            <label class="watchlist-field">Watchlist status
+              <select class="watchlist-select" data-watchlist>
+                <option value="">Not set</option><option value="watching">Watching</option><option value="completed">Completed</option><option value="plan">Plan to Watch</option><option value="on-hold">On Hold</option><option value="dropped">Dropped</option>
+              </select>
+            </label>
+            <button class="fav-toggle" type="button">♡ Favorite</button>
+          </article>
+
+          <article class="card" data-anime="The Apothecary Diaries" data-anilist-query="Kusuriya no Hitorigoto">
+            <img class="card-cover" src="https://placehold.co/600x800?text=Apothecary+Diaries" alt="The Apothecary Diaries cover" />
+            <h3><a href="apothecary-diaries.html">The Apothecary Diaries</a></h3>
+            <p class="meta">Mystery, Medicine, Court Intrigue</p>
+            <p>A pharmacy girl kidnapped into an imperial palace uses her medical genius to solve court mysteries and deadly conspiracies.</p>
+            <span class="tag">Mystery • Historical</span>
+            <label class="watchlist-field">Watchlist status
+              <select class="watchlist-select" data-watchlist>
+                <option value="">Not set</option><option value="watching">Watching</option><option value="completed">Completed</option><option value="plan">Plan to Watch</option><option value="on-hold">On Hold</option><option value="dropped">Dropped</option>
+              </select>
+            </label>
+            <button class="fav-toggle" type="button">♡ Favorite</button>
+          </article>
+
+          <article class="card" data-anime="Mushoku Tensei: Jobless Reincarnation" data-anilist-query="Mushoku Tensei: Isekai Ittara Honki Dasu">
+            <img class="card-cover" src="https://placehold.co/600x800?text=Mushoku+Tensei" alt="Mushoku Tensei cover" />
+            <h3><a href="mushoku-tensei.html">Mushoku Tensei: Jobless Reincarnation</a></h3>
+            <p class="meta">Isekai, Growth, Magic</p>
+            <p>A man given a second chance at life in a magical world vows not to waste it — a serious take on the isekai genre.</p>
+            <span class="tag">Isekai • Fantasy • Drama</span>
+            <label class="watchlist-field">Watchlist status
+              <select class="watchlist-select" data-watchlist>
+                <option value="">Not set</option><option value="watching">Watching</option><option value="completed">Completed</option><option value="plan">Plan to Watch</option><option value="on-hold">On Hold</option><option value="dropped">Dropped</option>
+              </select>
+            </label>
+            <button class="fav-toggle" type="button">♡ Favorite</button>
+          </article>
+
+          <article class="card" data-anime="Erased" data-anilist-query="Boku dake ga Inai Machi">
+            <img class="card-cover" src="https://placehold.co/600x800?text=Erased" alt="Erased cover" />
+            <h3><a href="erased.html">Erased</a></h3>
+            <p class="meta">Time Travel, Mystery, Childhood</p>
+            <p>A man with the ability to travel back in time is sent 18 years into the past to prevent a series of child murders.</p>
+            <span class="tag">Mystery • Thriller • Drama</span>
+            <label class="watchlist-field">Watchlist status
+              <select class="watchlist-select" data-watchlist>
+                <option value="">Not set</option><option value="watching">Watching</option><option value="completed">Completed</option><option value="plan">Plan to Watch</option><option value="on-hold">On Hold</option><option value="dropped">Dropped</option>
+              </select>
+            </label>
+            <button class="fav-toggle" type="button">♡ Favorite</button>
+          </article>
+
+          <article class="card" data-anime="The Promised Neverland" data-anilist-query="Yakusoku no Neverland">
+            <img class="card-cover" src="https://placehold.co/600x800?text=Promised+Neverland" alt="The Promised Neverland cover" />
+            <h3><a href="promised-neverland.html">The Promised Neverland</a></h3>
+            <p class="meta">Escape, Survival, Truth</p>
+            <p>Three gifted orphans uncover a horrifying truth about their orphanage and plan a daring escape — outsmarting monsters and adults at every turn.</p>
+            <span class="tag">Thriller • Dark Fantasy</span>
+            <label class="watchlist-field">Watchlist status
+              <select class="watchlist-select" data-watchlist>
+                <option value="">Not set</option><option value="watching">Watching</option><option value="completed">Completed</option><option value="plan">Plan to Watch</option><option value="on-hold">On Hold</option><option value="dropped">Dropped</option>
+              </select>
+            </label>
+            <button class="fav-toggle" type="button">♡ Favorite</button>
+          </article>
+
+          <article class="card" data-anime="Violet Evergarden" data-anilist-query="Violet Evergarden">
+            <img class="card-cover" src="https://placehold.co/600x800?text=Violet+Evergarden" alt="Violet Evergarden cover" />
+            <h3><a href="violet-evergarden.html">Violet Evergarden</a></h3>
+            <p class="meta">Letters, War, Emotion</p>
+            <p>A former child soldier learns to process emotion by writing heartfelt letters for others as an Auto Memory Doll.</p>
+            <span class="tag">Drama • Slice of Life</span>
+            <label class="watchlist-field">Watchlist status
+              <select class="watchlist-select" data-watchlist>
+                <option value="">Not set</option><option value="watching">Watching</option><option value="completed">Completed</option><option value="plan">Plan to Watch</option><option value="on-hold">On Hold</option><option value="dropped">Dropped</option>
+              </select>
+            </label>
+            <button class="fav-toggle" type="button">♡ Favorite</button>
+          </article>
+
+          <article class="card" data-anime="I Want to Eat Your Pancreas" data-anilist-query="Kimi no Suizou wo Tabetai">
+            <img class="card-cover" src="https://placehold.co/600x800?text=I+Want+to+Eat+Your+Pancreas" alt="I Want to Eat Your Pancreas cover" />
+            <h3><a href="i-want-to-eat-your-pancreas.html">I Want to Eat Your Pancreas</a></h3>
+            <p class="meta">Illness, Friendship, Living</p>
+            <p>An introverted boy accidentally discovers his classmate's secret diary — she is terminally ill, and she wants to spend her remaining days with him.</p>
+            <span class="tag">Drama • Romance</span>
+            <label class="watchlist-field">Watchlist status
+              <select class="watchlist-select" data-watchlist>
+                <option value="">Not set</option><option value="watching">Watching</option><option value="completed">Completed</option><option value="plan">Plan to Watch</option><option value="on-hold">On Hold</option><option value="dropped">Dropped</option>
+              </select>
+            </label>
+            <button class="fav-toggle" type="button">♡ Favorite</button>
+          </article>
+
+          <article class="card" data-anime="The Fragrant Flower Blooms with Dignity" data-anilist-query="Kaoru Hana wa Rin to Saku">
+            <img class="card-cover" src="https://placehold.co/600x800?text=The+Fragrant+Flower" alt="The Fragrant Flower cover" />
+            <h3><a href="fragrant-flower.html">The Fragrant Flower</a></h3>
+            <p class="meta">Romance, Rivalry, High School</p>
+            <p>Students from a boys' school and a girls' school fall for each other against a backdrop of long-standing rivalry and quiet longing.</p>
+            <span class="tag">Romance • Slice of Life</span>
+            <label class="watchlist-field">Watchlist status
+              <select class="watchlist-select" data-watchlist>
+                <option value="">Not set</option><option value="watching">Watching</option><option value="completed">Completed</option><option value="plan">Plan to Watch</option><option value="on-hold">On Hold</option><option value="dropped">Dropped</option>
+              </select>
+            </label>
+            <button class="fav-toggle" type="button">♡ Favorite</button>
+          </article>
+
+          <article class="card" data-anime="Hellsing Ultimate" data-anilist-query="Hellsing Ultimate">
+            <img class="card-cover" src="https://placehold.co/600x800?text=Hellsing+Ultimate" alt="Hellsing Ultimate cover" />
+            <h3><a href="hellsing-ultimate.html">Hellsing Ultimate</a></h3>
+            <p class="meta">Vampires, War, Darkness</p>
+            <p>The Hellsing Organization unleashes its ultimate weapon — the vampire Alucard — against an army of undead threatening England.</p>
+            <span class="tag">Horror • Action</span>
+            <label class="watchlist-field">Watchlist status
+              <select class="watchlist-select" data-watchlist>
+                <option value="">Not set</option><option value="watching">Watching</option><option value="completed">Completed</option><option value="plan">Plan to Watch</option><option value="on-hold">On Hold</option><option value="dropped">Dropped</option>
+              </select>
+            </label>
+            <button class="fav-toggle" type="button">♡ Favorite</button>
+          </article>
+
+          <article class="card" data-anime="Blue Lock" data-anilist-query="Blue Lock">
+            <img class="card-cover" src="https://placehold.co/600x800?text=Blue+Lock" alt="Blue Lock cover" />
+            <h3><a href="blue-lock.html">Blue Lock</a></h3>
+            <p class="meta">Football • Ego • Competition</p>
+            <p>300 strikers are locked in a brutal facility and forced to compete — only one will become Japan's best striker. Selfishness is the goal.</p>
+            <span class="tag">Sports • Thriller</span>
+            <label class="watchlist-field">Watchlist status
+              <select class="watchlist-select" data-watchlist>
+                <option value="">Not set</option><option value="watching">Watching</option><option value="completed">Completed</option><option value="plan">Plan to Watch</option><option value="on-hold">On Hold</option><option value="dropped">Dropped</option>
+              </select>
+            </label>
+            <button class="fav-toggle" type="button">♡ Favorite</button>
+          </article>
+
+          <article class="card" data-anime="Captain Tsubasa" data-anilist-query="Captain Tsubasa">
+            <img class="card-cover" src="https://placehold.co/600x800?text=Captain+Tsubasa" alt="Captain Tsubasa cover" />
+            <h3><a href="captain-tsubasa.html">Captain Tsubasa</a></h3>
+            <p class="meta">Football • Dreams • Youth</p>
+            <p>Tsubasa Ozora lives and breathes football, dreaming of winning the World Cup for Japan — the series that inspired a generation of real-life pros.</p>
+            <span class="tag">Sports • Classic</span>
+            <label class="watchlist-field">Watchlist status
+              <select class="watchlist-select" data-watchlist>
+                <option value="">Not set</option><option value="watching">Watching</option><option value="completed">Completed</option><option value="plan">Plan to Watch</option><option value="on-hold">On Hold</option><option value="dropped">Dropped</option>
+              </select>
+            </label>
+            <button class="fav-toggle" type="button">♡ Favorite</button>
+          </article>
+
+          <article class="card" data-anime="Ao Ashi" data-anilist-query="Ao Ashi">
+            <img class="card-cover" src="https://placehold.co/600x800?text=Ao+Ashi" alt="Ao Ashi cover" />
+            <h3><a href="ao-ashi.html">Ao Ashi</a></h3>
+            <p class="meta">Football • Tactics • Growth</p>
+            <p>Raw talent Ashito Aoi is spotted by a pro academy coach and gets one chance to prove himself — a realistic and tactical football coming-of-age story.</p>
+            <span class="tag">Sports • Drama</span>
+            <label class="watchlist-field">Watchlist status
+              <select class="watchlist-select" data-watchlist>
+                <option value="">Not set</option><option value="watching">Watching</option><option value="completed">Completed</option><option value="plan">Plan to Watch</option><option value="on-hold">On Hold</option><option value="dropped">Dropped</option>
+              </select>
+            </label>
+            <button class="fav-toggle" type="button">♡ Favorite</button>
+          </article>
+
+          <article class="card" data-anime="Kuroko's Basketball" data-anilist-query="Kuroko no Basket">
+            <img class="card-cover" src="https://placehold.co/600x800?text=Kuroko's+Basketball" alt="Kuroko's Basketball cover" />
+            <h3><a href="kurokos-basketball.html">Kuroko's Basketball</a></h3>
+            <p class="meta">Basketball • Teamwork • Rivalry</p>
+            <p>Invisible player Kuroko teams with powerhouse Kagami to defeat the legendary Generation of Miracles — each member a once-in-a-decade prodigy.</p>
+            <span class="tag">Sports • Action</span>
+            <label class="watchlist-field">Watchlist status
+              <select class="watchlist-select" data-watchlist>
+                <option value="">Not set</option><option value="watching">Watching</option><option value="completed">Completed</option><option value="plan">Plan to Watch</option><option value="on-hold">On Hold</option><option value="dropped">Dropped</option>
+              </select>
+            </label>
+            <button class="fav-toggle" type="button">♡ Favorite</button>
+          </article>
+
+          <article class="card" data-anime="Slam Dunk" data-anilist-query="Slam Dunk">
+            <img class="card-cover" src="https://placehold.co/600x800?text=Slam+Dunk" alt="Slam Dunk cover" />
+            <h3><a href="slam-dunk.html">Slam Dunk</a></h3>
+            <p class="meta">Basketball • Comedy • Heart</p>
+            <p>Delinquent Hanamichi Sakuragi joins the basketball team to impress a girl — and accidentally becomes a natural who could take Shohoku to nationals.</p>
+            <span class="tag">Sports • Classic</span>
+            <label class="watchlist-field">Watchlist status
+              <select class="watchlist-select" data-watchlist>
+                <option value="">Not set</option><option value="watching">Watching</option><option value="completed">Completed</option><option value="plan">Plan to Watch</option><option value="on-hold">On Hold</option><option value="dropped">Dropped</option>
+              </select>
+            </label>
+            <button class="fav-toggle" type="button">♡ Favorite</button>
+          </article>
+
+          <article class="card" data-anime="Hajime no Ippo" data-anilist-query="Hajime no Ippo">
+            <img class="card-cover" src="https://placehold.co/600x800?text=Hajime+no+Ippo" alt="Hajime no Ippo cover" />
+            <h3><a href="hajime-no-ippo.html">Hajime no Ippo</a></h3>
+            <p class="meta">Boxing • Determination • Comedy</p>
+            <p>Bullied high schooler Ippo Makunouchi discovers boxing and dedicates everything to reaching the top of Japanese boxing — one brutal fight at a time.</p>
+            <span class="tag">Sports • Action</span>
+            <label class="watchlist-field">Watchlist status
+              <select class="watchlist-select" data-watchlist>
+                <option value="">Not set</option><option value="watching">Watching</option><option value="completed">Completed</option><option value="plan">Plan to Watch</option><option value="on-hold">On Hold</option><option value="dropped">Dropped</option>
+              </select>
+            </label>
+            <button class="fav-toggle" type="button">♡ Favorite</button>
+          </article>
+
+          <article class="card" data-anime="Neon Genesis Evangelion" data-anilist-query="Neon Genesis Evangelion">
+            <img class="card-cover" src="https://placehold.co/600x800?text=Evangelion" alt="Neon Genesis Evangelion cover" />
+            <h3><a href="neon-genesis-evangelion.html">Neon Genesis Evangelion</a></h3>
+            <p class="meta">Mecha • Psychological • Existential</p>
+            <p>Shinji Ikari pilots a giant mech to fight mysterious Angels threatening humanity — but the real battles are inside his own fractured mind.</p>
+            <span class="tag">Mecha • Psychological</span>
+            <label class="watchlist-field">Watchlist status
+              <select class="watchlist-select" data-watchlist>
+                <option value="">Not set</option><option value="watching">Watching</option><option value="completed">Completed</option><option value="plan">Plan to Watch</option><option value="on-hold">On Hold</option><option value="dropped">Dropped</option>
+              </select>
+            </label>
+            <button class="fav-toggle" type="button">♡ Favorite</button>
+          </article>
+
+          <article class="card" data-anime="Paranoia Agent" data-anilist-query="Mousou Dairinin">
+            <img class="card-cover" src="https://placehold.co/600x800?text=Paranoia+Agent" alt="Paranoia Agent cover" />
+            <h3><a href="paranoia-agent.html">Paranoia Agent</a></h3>
+            <p class="meta">Psychological • Mystery • Surreal</p>
+            <p>A boy with a golden bat begins attacking strangers across Tokyo — but who he attacks, and why, reveals something deeply disturbing about modern society.</p>
+            <span class="tag">Psychological • Mystery</span>
+            <label class="watchlist-field">Watchlist status
+              <select class="watchlist-select" data-watchlist>
+                <option value="">Not set</option><option value="watching">Watching</option><option value="completed">Completed</option><option value="plan">Plan to Watch</option><option value="on-hold">On Hold</option><option value="dropped">Dropped</option>
+              </select>
+            </label>
+            <button class="fav-toggle" type="button">♡ Favorite</button>
+          </article>
+
+          <article class="card" data-anime="Fruits Basket" data-anilist-query="Fruits Basket">
+            <img class="card-cover" src="https://placehold.co/600x800?text=Fruits+Basket" alt="Fruits Basket cover" />
+            <h3><a href="fruits-basket.html">Fruits Basket</a></h3>
+            <p class="meta">Romance • Drama • Healing</p>
+            <p>Orphaned Tohru Honda moves in with the Sohma family and discovers their secret: members transform into Chinese zodiac animals when hugged by the opposite sex.</p>
+            <span class="tag">Romance • Drama</span>
+            <label class="watchlist-field">Watchlist status
+              <select class="watchlist-select" data-watchlist>
+                <option value="">Not set</option><option value="watching">Watching</option><option value="completed">Completed</option><option value="plan">Plan to Watch</option><option value="on-hold">On Hold</option><option value="dropped">Dropped</option>
+              </select>
+            </label>
+            <button class="fav-toggle" type="button">♡ Favorite</button>
+          </article>
+
+          <article class="card" data-anime="86 Eighty Six" data-anilist-query="86 Eighty Six">
+            <img class="card-cover" src="https://placehold.co/600x800?text=86+Eighty+Six" alt="86 Eighty Six cover" />
+            <h3><a href="86-eighty-six.html">86 — Eighty Six</a></h3>
+            <p class="meta">War • Discrimination • Sci-Fi</p>
+            <p>The Republic claims its robotic war against another nation has no human casualties — but the pilots are children of a persecuted ethnic group, hidden and left to die.</p>
+            <span class="tag">Sci-Fi • Drama</span>
+            <label class="watchlist-field">Watchlist status
+              <select class="watchlist-select" data-watchlist>
+                <option value="">Not set</option><option value="watching">Watching</option><option value="completed">Completed</option><option value="plan">Plan to Watch</option><option value="on-hold">On Hold</option><option value="dropped">Dropped</option>
+              </select>
+            </label>
+            <button class="fav-toggle" type="button">♡ Favorite</button>
+          </article>
+
+          <article class="card" data-anime="Oshi no Ko" data-anilist-query="Oshi no Ko">
+            <img class="card-cover" src="https://placehold.co/600x800?text=Oshi+no+Ko" alt="Oshi no Ko cover" />
+            <h3><a href="oshi-no-ko.html">Oshi no Ko</a></h3>
+            <p class="meta">Idol • Reincarnation • Industry Dark Side</p>
+            <p>A doctor is reincarnated as the twin child of his favourite idol and decides to uncover the entertainment industry's ugly truth — and who murdered his mother.</p>
+            <span class="tag">Drama • Mystery</span>
+            <label class="watchlist-field">Watchlist status
+              <select class="watchlist-select" data-watchlist>
+                <option value="">Not set</option><option value="watching">Watching</option><option value="completed">Completed</option><option value="plan">Plan to Watch</option><option value="on-hold">On Hold</option><option value="dropped">Dropped</option>
+              </select>
+            </label>
+            <button class="fav-toggle" type="button">♡ Favorite</button>
+          </article>
+
+          <article class="card" data-anime="Tougen Anki" data-anilist-query="Tougen Anki">
+            <img class="card-cover" src="https://placehold.co/600x800?text=Tougen+Anki" alt="Tougen Anki cover" />
+            <h3><a href="tougen-anki.html">Tougen Anki</a></h3>
+            <p class="meta">Action • Demons • Ancient Clans</p>
+            <p>High schooler Shiki inherits the blood of a demon-slaying clan and is thrust into a hidden war between oni and humans that has persisted for generations.</p>
+            <span class="tag">Action • Supernatural</span>
+            <label class="watchlist-field">Watchlist status
+              <select class="watchlist-select" data-watchlist>
+                <option value="">Not set</option><option value="watching">Watching</option><option value="completed">Completed</option><option value="plan">Plan to Watch</option><option value="on-hold">On Hold</option><option value="dropped">Dropped</option>
+              </select>
+            </label>
+            <button class="fav-toggle" type="button">♡ Favorite</button>
+          </article>
+
+          <article class="card" data-anime="KonoSuba" data-anilist-query="Kono Subarashii Sekai ni Shukufuku wo!">
+            <img class="card-cover" src="https://placehold.co/600x800?text=KonoSuba" alt="KonoSuba cover" />
+            <h3><a href="konosuba.html">KonoSuba</a></h3>
+            <p class="meta">Comedy • Isekai • Fantasy</p>
+            <p>Kazuma dies a pathetic death and is sent to a fantasy world with a useless goddess. Their team of disasters gets worse before it gets better — and it never really gets better.</p>
+            <span class="tag">Comedy • Isekai</span>
+            <label class="watchlist-field">Watchlist status
+              <select class="watchlist-select" data-watchlist>
+                <option value="">Not set</option><option value="watching">Watching</option><option value="completed">Completed</option><option value="plan">Plan to Watch</option><option value="on-hold">On Hold</option><option value="dropped">Dropped</option>
+              </select>
+            </label>
+            <button class="fav-toggle" type="button">♡ Favorite</button>
+          </article>
+
+          <article class="card" data-anime="Spirit Chronicles" data-anilist-query="Seirei Gensouki">
+            <img class="card-cover" src="https://placehold.co/600x800?text=Spirit+Chronicles" alt="Spirit Chronicles cover" />
+            <h3><a href="spirit-chronicles.html">Spirit Chronicles</a></h3>
+            <p class="meta">Isekai • Spirit Magic • Royalty</p>
+            <p>Two souls — a college student and a slum orphan — merge into one body in a fantasy world, navigating royalty, rare spirit magic, and memories from two lives.</p>
+            <span class="tag">Isekai • Fantasy</span>
+            <label class="watchlist-field">Watchlist status
+              <select class="watchlist-select" data-watchlist>
+                <option value="">Not set</option><option value="watching">Watching</option><option value="completed">Completed</option><option value="plan">Plan to Watch</option><option value="on-hold">On Hold</option><option value="dropped">Dropped</option>
+              </select>
+            </label>
+            <button class="fav-toggle" type="button">♡ Favorite</button>
+          </article>
+
+          <article class="card" data-anime="Darwin's Game" data-anilist-query="Darwin's Game">
+            <img class="card-cover" src="https://placehold.co/600x800?text=Darwin's+Game" alt="Darwin's Game cover" />
+            <h3><a href="darwins-game.html">Darwin's Game</a></h3>
+            <p class="meta">Survival • Action • Powers</p>
+            <p>High schooler Kaname receives a mysterious app invite — and is immediately thrust into a deadly real-world game where players fight using supernatural powers called Sigils.</p>
+            <span class="tag">Action • Thriller</span>
+            <label class="watchlist-field">Watchlist status
+              <select class="watchlist-select" data-watchlist>
+                <option value="">Not set</option><option value="watching">Watching</option><option value="completed">Completed</option><option value="plan">Plan to Watch</option><option value="on-hold">On Hold</option><option value="dropped">Dropped</option>
+              </select>
+            </label>
+            <button class="fav-toggle" type="button">♡ Favorite</button>
+          </article>
+
+          <article class="card" data-anime="Soul Eater" data-anilist-query="Soul Eater">
+            <img class="card-cover" src="https://placehold.co/600x800?text=Soul+Eater" alt="Soul Eater cover" />
+            <h3><a href="soul-eater.html">Soul Eater</a></h3>
+            <p class="meta">Action • Gothic • Weapons &amp; Meisters</p>
+            <p>Students at the Death Weapon Meister Academy train with weapons that transform into humans — collecting 99 evil souls and one witch soul to forge a Death Scythe.</p>
+            <span class="tag">Action • Fantasy</span>
+            <label class="watchlist-field">Watchlist status
+              <select class="watchlist-select" data-watchlist>
+                <option value="">Not set</option><option value="watching">Watching</option><option value="completed">Completed</option><option value="plan">Plan to Watch</option><option value="on-hold">On Hold</option><option value="dropped">Dropped</option>
+              </select>
+            </label>
+            <button class="fav-toggle" type="button">♡ Favorite</button>
+          </article>
+
+          <article class="card" data-anime="Bungo Stray Dogs" data-anilist-query="Bungou Stray Dogs">
+            <img class="card-cover" src="https://placehold.co/600x800?text=Bungo+Stray+Dogs" alt="Bungo Stray Dogs cover" />
+            <h3><a href="bungo-stray-dogs.html">Bungo Stray Dogs</a></h3>
+            <p class="meta">Supernatural • Detectives • Literature</p>
+            <p>The Armed Detective Agency — members with abilities named after literary authors — battles criminal organisations in Yokohama. Characters are based on real writers.</p>
+            <span class="tag">Action • Supernatural</span>
+            <label class="watchlist-field">Watchlist status
+              <select class="watchlist-select" data-watchlist>
+                <option value="">Not set</option><option value="watching">Watching</option><option value="completed">Completed</option><option value="plan">Plan to Watch</option><option value="on-hold">On Hold</option><option value="dropped">Dropped</option>
+              </select>
+            </label>
+            <button class="fav-toggle" type="button">♡ Favorite</button>
+          </article>
+
+          <article class="card" data-anime="Tokyo Revengers" data-anilist-query="Tokyo Revengers">
+            <img class="card-cover" src="https://placehold.co/600x800?text=Tokyo+Revengers" alt="Tokyo Revengers cover" />
+            <h3><a href="tokyo-revengers.html">Tokyo Revengers</a></h3>
+            <p class="meta">Time Travel • Gangs • Redemption</p>
+            <p>Loser Takemichi discovers he can time-leap 12 years into the past and joins a gang as a teen to prevent the murder of his first love in the present.</p>
+            <span class="tag">Action • Drama</span>
+            <label class="watchlist-field">Watchlist status
+              <select class="watchlist-select" data-watchlist>
+                <option value="">Not set</option><option value="watching">Watching</option><option value="completed">Completed</option><option value="plan">Plan to Watch</option><option value="on-hold">On Hold</option><option value="dropped">Dropped</option>
+              </select>
+            </label>
+            <button class="fav-toggle" type="button">♡ Favorite</button>
+          </article>
+
+          <article class="card" data-anime="Rent-a-Girlfriend" data-anilist-query="Kanojo, Okarishimasu">
+            <img class="card-cover" src="https://placehold.co/600x800?text=Rent-a-Girlfriend" alt="Rent-a-Girlfriend cover" />
+            <h3><a href="rent-a-girlfriend.html">Rent-a-Girlfriend</a></h3>
+            <p class="meta">Romance • Comedy • Awkward Feelings</p>
+            <p>After a breakup, Kazuya rents a girlfriend through an app — and a single lie to his family spirals into an increasingly complicated fake relationship with real emotions.</p>
+            <span class="tag">Romance • Comedy</span>
+            <label class="watchlist-field">Watchlist status
+              <select class="watchlist-select" data-watchlist>
+                <option value="">Not set</option><option value="watching">Watching</option><option value="completed">Completed</option><option value="plan">Plan to Watch</option><option value="on-hold">On Hold</option><option value="dropped">Dropped</option>
+              </select>
+            </label>
+            <button class="fav-toggle" type="button">♡ Favorite</button>
+          </article>
+
+          <article class="card" data-anime="Alya Sometimes Hides Her Feelings in Russian" data-anilist-query="Tokidoki Bosotto Russia-go de Dereru Tonari no Alya-san">
+            <img class="card-cover" src="https://placehold.co/600x800?text=Alya+in+Russian" alt="Alya Sometimes Hides Her Feelings in Russian cover" />
+            <h3><a href="alya-hides-feelings.html">Alya Sometimes Hides Her Feelings in Russian</a></h3>
+            <p class="meta">Romance • Comedy • Language</p>
+            <p>The cool Russian-Japanese student Alya whispers her honest feelings to her classmate Kuze in Russian — not knowing that he secretly understands every word.</p>
+            <span class="tag">Romance • Comedy</span>
+            <label class="watchlist-field">Watchlist status
+              <select class="watchlist-select" data-watchlist>
+                <option value="">Not set</option><option value="watching">Watching</option><option value="completed">Completed</option><option value="plan">Plan to Watch</option><option value="on-hold">On Hold</option><option value="dropped">Dropped</option>
+              </select>
+            </label>
+            <button class="fav-toggle" type="button">♡ Favorite</button>
+          </article>
+
+          <!-- Food Wars -->
+          <article class="card" data-anime="Food Wars" data-anilist-query="Shokugeki no Soma">
+            <img class="card-cover" src="https://placehold.co/300x420?text=Food+Wars" alt="Food Wars cover" />
+            <h3><a href="food-wars.html">Food Wars! Shokugeki no Soma</a></h3>
+            <p class="meta">Cooking • Shonen • Competition</p>
+            <p>Soma Yukihira enrols in the elite Totsuki Culinary Academy, where food battles called Shokugeki determine status — and one bad loss can mean expulsion. His unconventional diner cooking vs. culinary aristocracy.</p>
+            <span class="tag">Cooking • Action</span>
+            <label class="watchlist-field">Watchlist status
+              <select class="watchlist-select" data-watchlist>
+                <option value="">Not set</option><option value="watching">Watching</option><option value="completed">Completed</option><option value="plan">Plan to Watch</option><option value="on-hold">On Hold</option><option value="dropped">Dropped</option>
+              </select>
+            </label>
+            <button class="fav-toggle" type="button">♡ Favorite</button>
+          </article>
+
+          <!-- Kaiju No. 8 -->
+          <article class="card" data-anime="Kaiju No. 8" data-anilist-query="Kaiju No. 8">
+            <img class="card-cover" src="https://placehold.co/300x420?text=Kaiju+No.+8" alt="Kaiju No. 8 cover" />
+            <h3><a href="kaiju-no-8.html">Kaiju No. 8</a></h3>
+            <p class="meta">Action • Monster • Sci-Fi</p>
+            <p>Kafka Hibino has dreamed of joining Japan's Defence Force his whole life. When he's infected by a small kaiju and gains the ability to transform into an impossibly powerful monster himself, his path gets complicated.</p>
+            <span class="tag">Action • Monsters</span>
+            <label class="watchlist-field">Watchlist status
+              <select class="watchlist-select" data-watchlist>
+                <option value="">Not set</option><option value="watching">Watching</option><option value="completed">Completed</option><option value="plan">Plan to Watch</option><option value="on-hold">On Hold</option><option value="dropped">Dropped</option>
+              </select>
+            </label>
+            <button class="fav-toggle" type="button">♡ Favorite</button>
+          </article>
+
+          <!-- Delicious in Dungeon -->
+          <article class="card" data-anime="Delicious in Dungeon" data-anilist-query="Dungeon Meshi">
+            <img class="card-cover" src="https://placehold.co/300x420?text=Delicious+in+Dungeon" alt="Delicious in Dungeon cover" />
+            <h3><a href="delicious-in-dungeon.html">Delicious in Dungeon</a></h3>
+            <p class="meta">Fantasy • Comedy • Adventure</p>
+            <p>After his sister is eaten by a dragon, Laios insists on cooking and eating the dungeon monsters along the way to save her — so the party doesn't run out of money. Shockingly, the food is good. The dungeon ecology is fascinating.</p>
+            <span class="tag">Fantasy • Cooking</span>
+            <label class="watchlist-field">Watchlist status
+              <select class="watchlist-select" data-watchlist>
+                <option value="">Not set</option><option value="watching">Watching</option><option value="completed">Completed</option><option value="plan">Plan to Watch</option><option value="on-hold">On Hold</option><option value="dropped">Dropped</option>
+              </select>
+            </label>
+            <button class="fav-toggle" type="button">♡ Favorite</button>
+          </article>
+
+          <!-- Ranking of Kings -->
+          <article class="card" data-anime="Ranking of Kings" data-anilist-query="Ousama Ranking">
+            <img class="card-cover" src="https://placehold.co/300x420?text=Ranking+of+Kings" alt="Ranking of Kings cover" />
+            <h3><a href="ranking-of-kings.html">Ranking of Kings</a></h3>
+            <p class="meta">Fantasy • Adventure • Emotional</p>
+            <p>Bojji cannot hear, cannot speak, and cannot lift a sword. By every measure, he is unfit to be king. His journey to prove otherwise — with his shadow companion Kage — is one of the most emotionally devastating stories in recent anime.</p>
+            <span class="tag">Fantasy • Drama</span>
+            <label class="watchlist-field">Watchlist status
+              <select class="watchlist-select" data-watchlist>
+                <option value="">Not set</option><option value="watching">Watching</option><option value="completed">Completed</option><option value="plan">Plan to Watch</option><option value="on-hold">On Hold</option><option value="dropped">Dropped</option>
+              </select>
+            </label>
+            <button class="fav-toggle" type="button">♡ Favorite</button>
+          </article>
+
+          <!-- Pluto -->
+          <article class="card" data-anime="Pluto" data-anilist-query="Pluto">
+            <img class="card-cover" src="https://placehold.co/300x420?text=Pluto" alt="Pluto cover" />
+            <h3><a href="pluto.html">Pluto</a></h3>
+            <p class="meta">Sci-Fi • Mystery • Tragedy</p>
+            <p>Naoki Urasawa's reimagining of Astro Boy's "Greatest Robot on Earth" arc as a noir thriller. The world's seven greatest robots are being murdered one by one. Detective robot Gesicht investigates — and finds something close to grief.</p>
+            <span class="tag">Sci-Fi • Mystery</span>
+            <label class="watchlist-field">Watchlist status
+              <select class="watchlist-select" data-watchlist>
+                <option value="">Not set</option><option value="watching">Watching</option><option value="completed">Completed</option><option value="plan">Plan to Watch</option><option value="on-hold">On Hold</option><option value="dropped">Dropped</option>
+              </select>
+            </label>
+            <button class="fav-toggle" type="button">♡ Favorite</button>
+          </article>
+
+          <!-- Chihayafuru -->
+          <article class="card" data-anime="Chihayafuru" data-anilist-query="Chihayafuru">
+            <img class="card-cover" src="https://placehold.co/300x420?text=Chihayafuru" alt="Chihayafuru cover" />
+            <h3><a href="chihayafuru.html">Chihayafuru</a></h3>
+            <p class="meta">Sports • Drama • Romance</p>
+            <p>Chihaya Ayase becomes obsessed with karuta — a lightning-fast card game based on classical Japanese poetry — and builds a team in high school to reach the national championships. A sports anime about something most people have never heard of.</p>
+            <span class="tag">Sports • Karuta</span>
+            <label class="watchlist-field">Watchlist status
+              <select class="watchlist-select" data-watchlist>
+                <option value="">Not set</option><option value="watching">Watching</option><option value="completed">Completed</option><option value="plan">Plan to Watch</option><option value="on-hold">On Hold</option><option value="dropped">Dropped</option>
+              </select>
+            </label>
+            <button class="fav-toggle" type="button">♡ Favorite</button>
+          </article>
+
+          <!-- Beastars -->
+          <article class="card" data-anime="Beastars" data-anilist-query="Beastars">
+            <img class="card-cover" src="https://placehold.co/300x420?text=Beastars" alt="Beastars cover" />
+            <h3><a href="beastars.html">Beastars</a></h3>
+            <p class="meta">Drama • Psychological • Anthropomorphic</p>
+            <p>In a world of anthropomorphic animals, grey wolf Legoshi grapples with the predatory instincts he's been taught to suppress. When a herbivore student is devoured at school, the fragile peace between carnivores and herbivores begins to crack.</p>
+            <span class="tag">Drama • Dark</span>
+            <label class="watchlist-field">Watchlist status
+              <select class="watchlist-select" data-watchlist>
+                <option value="">Not set</option><option value="watching">Watching</option><option value="completed">Completed</option><option value="plan">Plan to Watch</option><option value="on-hold">On Hold</option><option value="dropped">Dropped</option>
+              </select>
+            </label>
+            <button class="fav-toggle" type="button">♡ Favorite</button>
+          </article>
+
+          <!-- Gachiakuta -->
+          <article class="card" data-anime="Gachiakuta" data-anilist-query="Gachiakuta">
+            <img class="card-cover" src="https://placehold.co/300x420?text=Gachiakuta" alt="Gachiakuta cover" />
+            <h3><a href="gachiakuta.html">Gachiakuta</a></h3>
+            <p class="meta">Action • Survival • Dark Fantasy</p>
+            <p>In a society where the poor are literally thrown into a garbage abyss, Rudo is cast down for a crime he didn't commit. He discovers that down here, discarded objects come alive — and that trash, wielded with will, is the only weapon available.</p>
+            <span class="tag">Action • Survival</span>
+            <label class="watchlist-field">Watchlist status
+              <select class="watchlist-select" data-watchlist>
+                <option value="">Not set</option><option value="watching">Watching</option><option value="completed">Completed</option><option value="plan">Plan to Watch</option><option value="on-hold">On Hold</option><option value="dropped">Dropped</option>
+              </select>
+            </label>
+            <button class="fav-toggle" type="button">♡ Favorite</button>
+          </article>
+
+          <!-- Blue Exorcist -->
+          <article class="card" data-anime="Blue Exorcist" data-anilist-query="Ao no Exorcist">
+            <img class="card-cover" src="https://placehold.co/300x420?text=Blue+Exorcist" alt="Blue Exorcist cover" />
+            <h3><a href="blue-exorcist.html">Blue Exorcist</a></h3>
+            <p class="meta">Action • Supernatural • Shonen</p>
+            <p>Rin Okumura discovers he is the son of Satan himself — and that his twin brother Yukio is already a trained exorcist who knew. Rather than accept his demonic heritage, Rin enrols in True Cross Academy to become an exorcist and defeat his own father.</p>
+            <span class="tag">Action • Supernatural</span>
+            <label class="watchlist-field">Watchlist status
+              <select class="watchlist-select" data-watchlist>
+                <option value="">Not set</option><option value="watching">Watching</option><option value="completed">Completed</option><option value="plan">Plan to Watch</option><option value="on-hold">On Hold</option><option value="dropped">Dropped</option>
+              </select>
+            </label>
+            <button class="fav-toggle" type="button">♡ Favorite</button>
+          </article>
+
+          <!-- High School DxD -->
+          <article class="card" data-anime="High School DxD" data-anilist-query="High School DxD">
+            <img class="card-cover" src="https://placehold.co/300x420?text=High+School+DxD" alt="High School DxD cover" />
+            <h3><a href="high-school-dxd.html">High School DxD</a></h3>
+            <p class="meta">Supernatural • Action • Ecchi</p>
+            <p>Issei Hyodo is killed on his first date — by a fallen angel. He's resurrected as a devil by the crimson-haired Rias Gremory and pulled into the supernatural war between devils, angels, and fallen angels. Beneath the fanservice is a surprisingly earnest power-fantasy story.</p>
+            <span class="tag">Supernatural • Ecchi</span>
+            <label class="watchlist-field">Watchlist status
+              <select class="watchlist-select" data-watchlist>
+                <option value="">Not set</option><option value="watching">Watching</option><option value="completed">Completed</option><option value="plan">Plan to Watch</option><option value="on-hold">On Hold</option><option value="dropped">Dropped</option>
+              </select>
+            </label>
+            <button class="fav-toggle" type="button">♡ Favorite</button>
+          </article>
+
+          <!-- Toilet-bound Hanako-kun -->
+          <article class="card" data-anime="Toilet-bound Hanako-kun" data-anilist-query="Jibaku Shounen Hanako-kun">
+            <img class="card-cover" src="https://placehold.co/300x420?text=Hanako-kun" alt="Toilet-bound Hanako-kun cover" />
+            <h3><a href="toilet-bound-hanako-kun.html">Toilet-bound Hanako-kun</a></h3>
+            <p class="meta">Supernatural • Mystery • Dark Fantasy</p>
+            <p>Nene Yashiro summons Hanako of the toilet — the school's most famous ghost — and becomes bound to him as his assistant. The seven school mysteries are real, dangerous, and hiding something much darker about the school's history.</p>
+            <span class="tag">Supernatural • Mystery</span>
+            <label class="watchlist-field">Watchlist status
+              <select class="watchlist-select" data-watchlist>
+                <option value="">Not set</option><option value="watching">Watching</option><option value="completed">Completed</option><option value="plan">Plan to Watch</option><option value="on-hold">On Hold</option><option value="dropped">Dropped</option>
+              </select>
+            </label>
+            <button class="fav-toggle" type="button">♡ Favorite</button>
+          </article>
+
+          <!-- Zom 100 -->
+          <article class="card" data-anime="Zom 100" data-anilist-query="Zom 100: Zombie ni Naru made ni Shitai 100 no Koto">
+            <img class="card-cover" src="https://placehold.co/300x420?text=Zom+100" alt="Zom 100 cover" />
+            <h3><a href="zom-100.html">Zom 100: Bucket List of the Dead</a></h3>
+            <p class="meta">Comedy • Horror • Life Affirmation</p>
+            <p>Akira spent three years crushed by a soul-destroying job. Then the zombie apocalypse starts and he realises — he doesn't have to go to work anymore. He writes a bucket list of 100 things to do before he becomes a zombie. Finally, he's free.</p>
+            <span class="tag">Comedy • Zombie</span>
+            <label class="watchlist-field">Watchlist status
+              <select class="watchlist-select" data-watchlist>
+                <option value="">Not set</option><option value="watching">Watching</option><option value="completed">Completed</option><option value="plan">Plan to Watch</option><option value="on-hold">On Hold</option><option value="dropped">Dropped</option>
+              </select>
+            </label>
+            <button class="fav-toggle" type="button">♡ Favorite</button>
+          </article>
+
+          <!-- World Trigger -->
+          <article class="card" data-anime="World Trigger" data-anilist-query="World Trigger">
+            <img class="card-cover" src="https://placehold.co/300x420?text=World+Trigger" alt="World Trigger cover" />
+            <h3><a href="world-trigger.html">World Trigger</a></h3>
+            <p class="meta">Sci-Fi • Action • Tactics</p>
+            <p>Four years ago, a gate to another dimension opened and Neighbors invaded Japan. The Border defence organisation holds the line using Trigger weapons. New agent Osamu Mikumo befriends Yuma, a Neighbor himself — and reality turns out to be far more complex than "us vs. them."</p>
+            <span class="tag">Sci-Fi • Tactics</span>
+            <label class="watchlist-field">Watchlist status
+              <select class="watchlist-select" data-watchlist>
+                <option value="">Not set</option><option value="watching">Watching</option><option value="completed">Completed</option><option value="plan">Plan to Watch</option><option value="on-hold">On Hold</option><option value="dropped">Dropped</option>
+              </select>
+            </label>
+            <button class="fav-toggle" type="button">♡ Favorite</button>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div>
+        <h3>Anime Atlas</h3>
+        <p>Explore more worlds, one story at a time.</p>
+      </div>
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="manga.html">Manga</a>
+        <a href="episode-schedule.html">Schedule</a>
+        <a href="top-2026.html">Top 2026</a>
+        <a href="recommendations.html">Recommendations</a>
+      </div>
+    </footer>
+    <script src="script.js?v=4"></script>
+  </body>
+</html>

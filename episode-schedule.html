@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Episode Schedule — Anime Atlas</title>
+    <link rel="stylesheet" href="styles.css?v=4" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=DM+Sans:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <nav class="nav">
+        <a class="logo" href="index.html">Anime Atlas</a>
+        <div class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="browse-stories.html">Browse stories</a>
+        </div>
+        <button class="cta">Join the Club</button>
+      </nav>
+      <section class="hero">
+        <div class="hero-text">
+          <p class="badge">Next episode tracker</p>
+          <h1>Featured anime schedule</h1>
+          <p class="lead">
+            Pick an anime to see live airing details for every season.
+          </p>
+          <div class="schedule-picker">
+            <label for="anime-select">Choose an anime</label>
+            <select id="anime-select">
+              <option value="">Select a title</option>
+            </select>
+          </div>
+          <div class="schedule-result" id="schedule-result">
+            <h3>Next episode</h3>
+            <p>Select an anime to view the schedule.</p>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div class="glow-card">
+            <h3>Featured list</h3>
+            <ul class="schedule-list">
+              <li>Naruto</li>
+              <li>One Piece</li>
+              <li>Attack on Titan</li>
+              <li>My Hero Academia</li>
+              <li>Dragon Ball Z</li>
+              <li>Demon Slayer</li>
+              <li>One Punch Man</li>
+              <li>Spy x Family</li>
+              <li>Chainsaw Man</li>
+              <li>Jujutsu Kaisen</li>
+              <li>Frieren: Beyond Journey's End</li>
+              <li>Hell's Paradise</li>
+              <li>Fire Force</li>
+              <li>Solo Leveling</li>
+              <li>Sakamoto Days</li>
+              <li>Bleach</li>
+              <li>Hunter x Hunter</li>
+              <li>Haikyu!!</li>
+              <li>Black Clover</li>
+              <li>JoJo's Bizarre Adventure</li>
+              <li>Horimiya</li>
+              <li>Blue Box</li>
+              <li>Neon Genesis Evangelion</li>
+              <li>Fruits Basket</li>
+              <li>86 Eighty Six</li>
+              <li>Oshi no Ko</li>
+              <li>KonoSuba</li>
+              <li>Soul Eater</li>
+              <li>Bungo Stray Dogs</li>
+              <li>Tokyo Revengers</li>
+              <li>Food Wars</li>
+              <li>Kaiju No. 8</li>
+              <li>Delicious in Dungeon</li>
+              <li>Ranking of Kings</li>
+              <li>Pluto</li>
+              <li>Chihayafuru</li>
+              <li>Beastars</li>
+              <li>Gachiakuta</li>
+              <li>Blue Exorcist</li>
+              <li>High School DxD</li>
+              <li>Toilet-bound Hanako-kun</li>
+              <li>Zom 100</li>
+              <li>World Trigger</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </header>
+
+    <main id="main">
+      <section class="section">
+        <div class="section-head">
+          <h2>How it works</h2>
+          <p>Schedules are pulled on demand from live data.</p>
+        </div>
+        <div class="grid two">
+          <article class="card">
+            <h3>Live airing info</h3>
+            <p>
+              We show status, next episode, air date, and total episodes.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Fallbacks included</h3>
+            <p>
+              If data is unavailable or a title is missing, you’ll see a clear note.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section alt">
+        <div class="section-head">
+          <h2>Airing this season</h2>
+          <p>Browse what’s currently airing by season and year.</p>
+        </div>
+        <div class="schedule-picker">
+          <label for="season-select">Season</label>
+          <select id="season-select"></select>
+          <label for="season-year">Year</label>
+          <select id="season-year"></select>
+        </div>
+        <div class="grid three" id="season-airing-list">
+          <p class="muted">Loading season lineup...</p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div>
+        <h3>Anime Atlas</h3>
+        <p>Stay updated with your favorite series.</p>
+      </div>
+      <div class="footer-links">
+        <a href="browse-stories.html">Browse stories</a>
+      </div>
+    </footer>
+    <script src="script.js?v=4"></script>
+  </body>
+</html>

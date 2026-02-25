@@ -1,0 +1,9 @@
+{
+  "name": "anime-atlas-notifications",
+  "version": "1.0.0",
+  "private": true,
+  "type": "commonjs",
+  "scripts": {
+    "notify": "node automation/notify.js"
+  }
+}

@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Attack on Titan — Story & Fun Facts</title>
+    <link rel="stylesheet" href="styles.css?v=4" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=DM+Sans:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body data-anilist-query="Shingeki no Kyojin">
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <nav class="nav">
+        <a class="logo" href="index.html">Anime Atlas</a>
+        <div class="nav-links">
+          <a href="index.html#featured">Back to Featured</a>
+        </div>
+        <button class="cta">Join the Club</button>
+      </nav>
+      <section class="hero">
+        <div class="hero-text">
+          <p class="badge">Dark Fantasy • Mystery • War</p>
+          <h1>Attack on Titan</h1>
+          <p class="lead">
+            Behind towering walls, humanity fights for survival as secrets about
+            Titans, history, and freedom unravel across a brutal conflict.
+          </p>
+          <div class="rating-row">
+            <span class="rating-pill">Suggested rating: TV-MA</span>
+            <span class="rating-pill">Suggested age: 17+</span>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <img class="detail-cover" id="detail-cover" src="https://placehold.co/600x800?text=Attack%20on%20Titan" alt="Attack on Titan cover" />
+          <div class="episode-tracker tracker-card" data-anime="Attack on Titan">
+            <h3>Episode tracker</h3>
+            <p class="tracker-status" data-status>Episode 0</p>
+            <div class="progress">
+              <div class="progress-bar" data-bar style="width: 0%;"></div>
+            </div>
+            <div class="tracker-actions">
+              <button type="button" class="ghost" data-action="decrease">-1</button>
+              <button type="button" class="primary" data-action="increase">+1</button>
+              <button type="button" class="ghost" data-action="reset">Reset</button>
+            </div>
+          </div>
+          <div class="glow-card">
+            <h3>Core Themes</h3>
+            <ul>
+              <li>Freedom versus control</li>
+              <li>Cycles of conflict</li>
+              <li>Truth and memory</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </header>
+
+    <main id="main">
+      <section class="section">
+        <div class="section-head">
+          <h2>Story overview</h2>
+          <p>From survival horror to global conflict.</p>
+        </div>
+        <div class="grid two">
+          <article class="card">
+            <h3>Act 1: The fall of the walls</h3>
+            <p>
+              Eren Yeager joins the Scouts after witnessing tragedy, determined
+              to eradicate the Titans that threaten humanity.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Act 2: Secrets of the Titans</h3>
+            <p>
+              The truth about Titan shifters and the history of the walls changes
+              everything the characters believed.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Act 3: Beyond the sea</h3>
+            <p>
+              The conflict expands to the outside world, revealing political
+              tensions and centuries of prejudice.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Finale: The cost of freedom</h3>
+            <p>
+              The story confronts the price of survival and the weight of
+              inherited hatred.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section alt">
+        <div class="section-head">
+          <h2>Fun facts</h2>
+          <p>Behind-the-scenes and worldbuilding highlights.</p>
+        </div>
+        <div class="grid two">
+          <div class="stack">
+            <div class="fact">
+              <h4>The series blends mystery with war drama.</h4>
+              <p>
+                It begins as survival horror before shifting into complex
+                political storytelling.
+              </p>
+            </div>
+            <div class="fact">
+              <h4>ODM gear was designed to feel realistic.</h4>
+              <p>
+                Animators studied movement and physics to create the intense
+                aerial combat sequences.
+              </p>
+            </div>
+            <div class="fact">
+              <h4>The soundtrack mixes choir and orchestral themes.</h4>
+              <p>
+                The music reflects the show’s sense of scale and tragedy.
+              </p>
+            </div>
+          </div>
+          <div class="callout">
+            <h3>Notable arcs</h3>
+            <ul>
+              <li>Battle for Trost</li>
+              <li>Clash of the Titans</li>
+              <li>Return to Shiganshina</li>
+              <li>Marley Arc</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="section reviews-section" data-anime="Attack on Titan">
+        <div class="section-head">
+          <h2>Reviews & ratings</h2>
+          <p>Share your thoughts and rate this anime.</p>
+        </div>
+        <div class="reviews-summary" data-summary>Loading ratings...</div>
+        <form class="review-form" data-review-form>
+          <label class="review-field">
+            Your name
+            <input type="text" name="reviewer" placeholder="Your name" required />
+          </label>
+          <label class="review-field">
+            Your rating
+            <select name="rating" required>
+              <option value="">Select</option>
+              <option value="5">★★★★★ (5)</option>
+              <option value="4">★★★★☆ (4)</option>
+              <option value="3">★★★☆☆ (3)</option>
+              <option value="2">★★☆☆☆ (2)</option>
+              <option value="1">★☆☆☆☆ (1)</option>
+            </select>
+          </label>
+          <label class="review-field">
+            Your review
+            <textarea name="review" rows="4" placeholder="Write a short review" required></textarea>
+          </label>
+          <button type="submit" class="primary">Submit review</button>
+        </form>
+        <div class="reviews-list" data-reviews></div>
+      </section>
+      <section class="section character-spotlight" data-anime="Attack on Titan">
+        <div class="section-head">
+          <h2>Character spotlight</h2>
+          <p>Key characters from this series.</p>
+        </div>
+        <div class="character-grid" data-characters>
+          <p class="muted">Loading characters...</p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div>
+        <h3>Anime Atlas</h3>
+        <p>More worlds and lore waiting for you.</p>
+      </div>
+      <div class="footer-links">
+        <a href="index.html#featured">Featured</a>
+      </div>
+    </footer>
+    <script src="script.js?v=4"></script>
+  </body>
+</html>

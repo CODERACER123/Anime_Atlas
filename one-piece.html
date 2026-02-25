@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>One Piece — Story & Fun Facts</title>
+    <link rel="stylesheet" href="styles.css?v=4" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=DM+Sans:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body data-anilist-query="One Piece">
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <nav class="nav">
+        <a class="logo" href="index.html">Anime Atlas</a>
+        <div class="nav-links">
+          <a href="index.html#featured">Back to Featured</a>
+        </div>
+        <button class="cta">Join the Club</button>
+      </nav>
+      <section class="hero">
+        <div class="hero-text">
+          <p class="badge">Adventure • Pirates • Found Family</p>
+          <h1>One Piece</h1>
+          <p class="lead">
+            Monkey D. Luffy sails the Grand Line to find the legendary treasure,
+            building a crew that turns the dream of freedom into a way of life.
+          </p>
+          <div class="rating-row">
+            <span class="rating-pill">Suggested rating: TV-PG</span>
+            <span class="rating-pill">Suggested age: 10+</span>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <img class="detail-cover" id="detail-cover" src="https://placehold.co/600x800?text=One%20Piece" alt="One Piece cover" />
+          <div class="episode-tracker tracker-card" data-anime="One Piece">
+            <h3>Episode tracker</h3>
+            <p class="tracker-status" data-status>Episode 0</p>
+            <div class="progress">
+              <div class="progress-bar" data-bar style="width: 0%;"></div>
+            </div>
+            <div class="tracker-actions">
+              <button type="button" class="ghost" data-action="decrease">-1</button>
+              <button type="button" class="primary" data-action="increase">+1</button>
+              <button type="button" class="ghost" data-action="reset">Reset</button>
+            </div>
+          </div>
+          <div class="glow-card">
+            <h3>Core Themes</h3>
+            <ul>
+              <li>Freedom and chosen family</li>
+              <li>Inherited will</li>
+              <li>Adventure and discovery</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </header>
+
+    <main id="main">
+      <section class="section">
+        <div class="section-head">
+          <h2>Story overview</h2>
+          <p>The Straw Hat Pirates’ journey across a vast world.</p>
+        </div>
+        <div class="grid two">
+          <article class="card">
+            <h3>Act 1: East Blue beginnings</h3>
+            <p>
+              Luffy forms his first crew, proving that loyalty and courage matter
+              more than fame when facing ruthless pirates.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Act 2: Grand Line discoveries</h3>
+            <p>
+              New islands introduce ancient mysteries, powerful rivals, and
+              escalating stakes with the World Government.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Act 3: A world in upheaval</h3>
+            <p>
+              Alliances shift as Luffy challenges emperors, revealing deeper
+              secrets about the One Piece and the Void Century.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Ongoing: The final voyage</h3>
+            <p>
+              The crew pushes toward the end of the Grand Line, united by their
+              dreams and the promise of freedom.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section alt">
+        <div class="section-head">
+          <h2>Fun facts</h2>
+          <p>Milestones and trivia from the high seas.</p>
+        </div>
+        <div class="grid two">
+          <div class="stack">
+            <div class="fact">
+              <h4>One Piece is one of the best-selling manga series ever.</h4>
+              <p>
+                Eiichiro Oda’s story holds global records for its longevity and
+                sales.
+              </p>
+            </div>
+            <div class="fact">
+              <h4>The world map mirrors real history.</h4>
+              <p>
+                Many islands draw inspiration from historical cultures and myths
+                to build a rich, diverse setting.
+              </p>
+            </div>
+            <div class="fact">
+              <h4>The crew’s flags are unique to each member.</h4>
+              <p>
+                Jolly Roger designs and ship emblems capture each pirate’s dream
+                and personality.
+              </p>
+            </div>
+          </div>
+          <div class="callout">
+            <h3>Notable arcs</h3>
+            <ul>
+              <li>Arlong Park</li>
+              <li>Enies Lobby</li>
+              <li>Marineford</li>
+              <li>Wano Country</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="section reviews-section" data-anime="One Piece">
+        <div class="section-head">
+          <h2>Reviews & ratings</h2>
+          <p>Share your thoughts and rate this anime.</p>
+        </div>
+        <div class="reviews-summary" data-summary>Loading ratings...</div>
+        <form class="review-form" data-review-form>
+          <label class="review-field">
+            Your name
+            <input type="text" name="reviewer" placeholder="Your name" required />
+          </label>
+          <label class="review-field">
+            Your rating
+            <select name="rating" required>
+              <option value="">Select</option>
+              <option value="5">★★★★★ (5)</option>
+              <option value="4">★★★★☆ (4)</option>
+              <option value="3">★★★☆☆ (3)</option>
+              <option value="2">★★☆☆☆ (2)</option>
+              <option value="1">★☆☆☆☆ (1)</option>
+            </select>
+          </label>
+          <label class="review-field">
+            Your review
+            <textarea name="review" rows="4" placeholder="Write a short review" required></textarea>
+          </label>
+          <button type="submit" class="primary">Submit review</button>
+        </form>
+        <div class="reviews-list" data-reviews></div>
+      </section>
+      <section class="section character-spotlight" data-anime="One Piece">
+        <div class="section-head">
+          <h2>Character spotlight</h2>
+          <p>Key characters from this series.</p>
+        </div>
+        <div class="character-grid" data-characters>
+          <p class="muted">Loading characters...</p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div>
+        <h3>Anime Atlas</h3>
+        <p>More worlds and lore waiting for you.</p>
+      </div>
+      <div class="footer-links">
+        <a href="index.html#featured">Featured</a>
+      </div>
+    </footer>
+    <script src="script.js?v=4"></script>
+  </body>
+</html>

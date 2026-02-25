@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Horimiya — Anime Atlas</title>
+    <link rel="stylesheet" href="styles.css?v=4" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body data-anilist-query="Horimiya">
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <nav class="nav">
+        <a class="logo" href="index.html">✦ Anime Atlas</a>
+        <div class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="browse-stories.html">Browse stories</a>
+          <a href="top-2026.html">Top 2026</a>
+        </div>
+        <button class="cta">Join the Club</button>
+      </nav>
+      <section class="hero">
+        <div class="hero-text">
+          <p class="badge">Romance • Slice of Life • High School</p>
+          <h1>Horimiya</h1>
+          <p class="lead">
+            Popular Hori and quiet Miyamura share their secret vulnerable sides under one roof, leading to a charmingly realistic high school romance.
+          </p>
+          <div class="rating-row">
+            <span class="rating-pill">Suggested rating: TV-14</span>
+            <span class="rating-pill">Suggested age: 14+</span>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <img class="detail-cover" id="detail-cover" src="https://placehold.co/600x800?text=Horimiya" alt="Horimiya cover" />
+          <div class="episode-tracker tracker-card" data-anime="Horimiya">
+            <h3>Episode tracker</h3>
+            <p class="tracker-status" data-status>Episode 0</p>
+            <div class="progress">
+              <div class="progress-bar" data-bar style="width: 0%;"></div>
+            </div>
+            <div class="tracker-actions">
+              <button type="button" class="ghost" data-action="decrease">-1</button>
+              <button type="button" class="primary" data-action="increase">+1</button>
+              <button type="button" class="ghost" data-action="reset">Reset</button>
+            </div>
+          </div>
+          <div class="glow-card">
+            <h3>Key Elements</h3>
+            <ul>
+              <li>🌸 Authentic character growth</li>
+              <li>💖 Warm, emotional bonds</li>
+              <li>🏫 Memorable supporting cast</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </header>
+
+    <main id="main">
+      <section class="section">
+        <div class="section-head">
+          <h2>Hidden Sides</h2>
+          <p>The masks we wear in public vs. the true self we show at home.</p>
+        </div>
+        <div class="grid two">
+          <article class="card">
+            <h3>Kyoko Hori</h3>
+            <p>
+              Popular and smart at school, but a hardworking "homemaker" for her younger brother after classes.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Izumi Miyamura</h3>
+            <p>
+              Quiet and gloomy at school, but a kind-hearted, tattooed rebel when his piercings are visible outside.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Shared Secrets</h3>
+            <p>
+              A chance encounter brings them together, revealing truths that only they understand about each other.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Ensemble Dynamics</h3>
+            <p>
+              The romance isn't just about two people—it's about their friends and families growing together.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section alt">
+        <div class="section-head">
+          <h2>Fun facts</h2>
+          <p>Highlights from the world of Horimiya.</p>
+        </div>
+        <div class="grid two">
+          <div class="stack">
+            <div class="fact">
+              <h4>Webcomic origins.</h4>
+              <p>
+                Originally a webcomic by HERO before being adapted into a serialized manga.
+              </p>
+            </div>
+            <div class="fact">
+              <h4>Artistic shift.</h4>
+              <p>
+                The character designs were significantly refined for the serialized manga run.
+              </p>
+            </div>
+            <div class="fact">
+              <h4>Secret tattoos.</h4>
+              <p>
+                Miyamura’s quiet school persona hides many tattoos and piercings.
+              </p>
+            </div>
+          </div>
+          <div class="callout">
+            <h3>Notable arcs</h3>
+            <ul>
+              <li>The First Home Visit</li>
+              <li>Kyoto School Trip</li>
+              <li>The Sports Festival</li>
+              <li>Graduation Season</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="section reviews-section" data-anime="Horimiya">
+        <div class="section-head">
+          <h2>Reviews & ratings</h2>
+          <p>Share your thoughts and rate this anime.</p>
+        </div>
+        <div class="reviews-summary" data-summary>Loading ratings...</div>
+        <form class="review-form" data-review-form>
+          <label class="review-field">
+            Your name
+            <input type="text" name="reviewer" placeholder="Your name" required />
+          </label>
+          <label class="review-field">
+            Your rating
+            <select name="rating" required>
+              <option value="">Select</option>
+              <option value="5">★★★★★ (5)</option>
+              <option value="4">★★★★☆ (4)</option>
+              <option value="3">★★★☆☆ (3)</option>
+              <option value="2">★★☆☆☆ (2)</option>
+              <option value="1">★☆☆☆☆ (1)</option>
+            </select>
+          </label>
+          <label class="review-field">
+            Your review
+            <textarea name="review" rows="4" placeholder="Write a short review" required></textarea>
+          </label>
+          <button type="submit" class="primary">Submit review</button>
+        </form>
+        <div class="reviews-list" data-reviews></div>
+      </section>
+
+      <section class="section character-spotlight" data-anime="Horimiya">
+        <div class="section-head">
+          <h2>Character spotlight</h2>
+          <p>Key characters from this series.</p>
+        </div>
+        <div class="character-grid" data-characters>
+          <p class="muted">Loading characters...</p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div>
+        <h3>Anime Atlas</h3>
+        <p>Explore more worlds, one story at a time.</p>
+      </div>
+      <div class="footer-links">
+        <a href="manga.html">Manga</a>
+        <a href="browse-stories.html">Browse</a>
+        <a href="index.html">Home</a>
+      </div>
+    </footer>
+    <script src="script.js?v=4"></script>
+  </body>
+</html>

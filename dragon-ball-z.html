@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dragon Ball Z — Story & Fun Facts</title>
+    <link rel="stylesheet" href="styles.css?v=4" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=DM+Sans:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body data-anilist-query="Dragon Ball Z">
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <nav class="nav">
+        <a class="logo" href="index.html">Anime Atlas</a>
+        <div class="nav-links">
+          <a href="index.html#featured">Back to Featured</a>
+        </div>
+        <button class="cta">Join the Club</button>
+      </nav>
+      <section class="hero">
+        <div class="hero-text">
+          <p class="badge">Action • Saiyans • Legacy</p>
+          <h1>Dragon Ball Z</h1>
+          <p class="lead">
+            Goku and the Z Fighters protect Earth from ever-stronger foes, pushing
+            past their limits with legendary transformations.
+          </p>
+          <div class="rating-row">
+            <span class="rating-pill">Suggested rating: TV-PG</span>
+            <span class="rating-pill">Suggested age: 10+</span>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <img class="detail-cover" id="detail-cover" src="https://placehold.co/600x800?text=Dragon%20Ball%20Z" alt="Dragon Ball Z cover" />
+          <div class="episode-tracker tracker-card" data-anime="Dragon Ball Z">
+            <h3>Episode tracker</h3>
+            <p class="tracker-status" data-status>Episode 0</p>
+            <div class="progress">
+              <div class="progress-bar" data-bar style="width: 0%;"></div>
+            </div>
+            <div class="tracker-actions">
+              <button type="button" class="ghost" data-action="decrease">-1</button>
+              <button type="button" class="primary" data-action="increase">+1</button>
+              <button type="button" class="ghost" data-action="reset">Reset</button>
+            </div>
+          </div>
+          <div class="glow-card">
+            <h3>Core Themes</h3>
+            <ul>
+              <li>Power through training</li>
+              <li>Family and legacy</li>
+              <li>Never-ending rivalry</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </header>
+
+    <main id="main">
+      <section class="section">
+        <div class="section-head">
+          <h2>Story overview</h2>
+          <p>Classic battles, iconic villains, and heroic growth.</p>
+        </div>
+        <div class="grid two">
+          <article class="card">
+            <h3>Act 1: Saiyan arrival</h3>
+            <p>
+              Goku’s alien heritage is revealed, bringing the threat of the Saiyan
+              warriors and raising the stakes for Earth’s defenders.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Act 2: Namek and Frieza</h3>
+            <p>
+              The hunt for the Dragon Balls leads to an intergalactic showdown and
+              the rise of Super Saiyan.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Act 3: Androids and Cell</h3>
+            <p>
+              Artificial fighters challenge the heroes, culminating in the Cell
+              Games and Gohan’s shining moment.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Finale: Buu saga</h3>
+            <p>
+              Majin Buu’s chaos tests the Z Fighters’ unity and introduces fusion
+              and new heroic sacrifices.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section alt">
+        <div class="section-head">
+          <h2>Fun facts</h2>
+          <p>Highlights that defined anime action storytelling.</p>
+        </div>
+        <div class="grid two">
+          <div class="stack">
+            <div class="fact">
+              <h4>Super Saiyan changed the genre.</h4>
+              <p>
+                The transformation became a blueprint for power-ups in shōnen
+                anime.
+              </p>
+            </div>
+            <div class="fact">
+              <h4>Training arcs are iconic.</h4>
+              <p>
+                From gravity chambers to the Hyperbolic Time Chamber, training is
+                a core motif.
+              </p>
+            </div>
+            <div class="fact">
+              <h4>Villains raise the bar each saga.</h4>
+              <p>
+                Each main antagonist escalates the scale of the conflict.
+              </p>
+            </div>
+          </div>
+          <div class="callout">
+            <h3>Notable arcs</h3>
+            <ul>
+              <li>Saiyan Saga</li>
+              <li>Namek Saga</li>
+              <li>Cell Games</li>
+              <li>Buu Saga</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="section reviews-section" data-anime="Dragon Ball Z">
+        <div class="section-head">
+          <h2>Reviews & ratings</h2>
+          <p>Share your thoughts and rate this anime.</p>
+        </div>
+        <div class="reviews-summary" data-summary>Loading ratings...</div>
+        <form class="review-form" data-review-form>
+          <label class="review-field">
+            Your name
+            <input type="text" name="reviewer" placeholder="Your name" required />
+          </label>
+          <label class="review-field">
+            Your rating
+            <select name="rating" required>
+              <option value="">Select</option>
+              <option value="5">★★★★★ (5)</option>
+              <option value="4">★★★★☆ (4)</option>
+              <option value="3">★★★☆☆ (3)</option>
+              <option value="2">★★☆☆☆ (2)</option>
+              <option value="1">★☆☆☆☆ (1)</option>
+            </select>
+          </label>
+          <label class="review-field">
+            Your review
+            <textarea name="review" rows="4" placeholder="Write a short review" required></textarea>
+          </label>
+          <button type="submit" class="primary">Submit review</button>
+        </form>
+        <div class="reviews-list" data-reviews></div>
+      </section>
+      <section class="section character-spotlight" data-anime="Dragon Ball Z">
+        <div class="section-head">
+          <h2>Character spotlight</h2>
+          <p>Key characters from this series.</p>
+        </div>
+        <div class="character-grid" data-characters>
+          <p class="muted">Loading characters...</p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div>
+        <h3>Anime Atlas</h3>
+        <p>More worlds and lore waiting for you.</p>
+      </div>
+      <div class="footer-links">
+        <a href="index.html#featured">Featured</a>
+      </div>
+    </footer>
+    <script src="script.js?v=4"></script>
+  </body>
+</html>
