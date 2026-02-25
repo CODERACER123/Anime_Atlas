@@ -1096,6 +1096,21 @@ if (watchlistClear) {
   });
 }
 
+// Browse hero search — clear button
+(function () {
+  const input = document.getElementById("anime-search");
+  const btn = document.getElementById("browse-hero-clear");
+  if (!input || !btn) return;
+  const sync = () => btn.classList.toggle("visible", input.value.length > 0);
+  input.addEventListener("input", sync);
+  btn.addEventListener("click", () => {
+    input.value = "";
+    input.dispatchEvent(new Event("input", { bubbles: true }));
+    input.focus();
+    sync();
+  });
+})();
+
 const searchInput = document.getElementById("anime-search");
 const animeGrid = document.getElementById("anime-grid");
 const genreFilter = document.getElementById("genre-filter");
@@ -3395,5 +3410,6 @@ document.querySelectorAll(".quiz-card").forEach((card) => {
     card.appendChild(preview);
   });
 })();
+
 
 
