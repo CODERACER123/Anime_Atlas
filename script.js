@@ -155,6 +155,11 @@ const button = document.getElementById("random-fact");
   }
 })();
 
+/* ── Local SVG placeholders (no external service needed) ──── */
+const PLACEHOLDER_COVER = "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 280'%3E%3Crect width='200' height='280' fill='%230f1428'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' font-size='40' fill='%23ffffff22'%3E%E2%9C%A6%3C/text%3E%3C/svg%3E";
+const PLACEHOLDER_CHAR  = "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 280'%3E%3Crect width='200' height='280' fill='%230f1428'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' font-size='36' fill='%23ffffff22'%3E%F0%9F%91%A4%3C/text%3E%3C/svg%3E";
+const PLACEHOLDER_TILE  = "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 60 80'%3E%3Crect width='60' height='80' fill='%230f1428'/%3E%3C/svg%3E";
+
 const themeKey = "animeAtlasTheme";
 const getPreferredTheme = () => {
   const saved = localStorage.getItem(themeKey);
@@ -3358,3 +3363,4 @@ document.querySelectorAll(".quiz-card").forEach((card) => {
     card.appendChild(preview);
   });
 })();
+
